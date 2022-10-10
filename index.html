@@ -10,7 +10,7 @@
         <title>Stian Martinsen-Stormyr | Portfolio</title>
     </head>
     <body>
-        <header class="header">
+        <header class="header" id="home">
             <div class="header__intro">
                 <div class="header__intro-content"></div>
                 <div class="header__intro-content-wrapper">
@@ -42,16 +42,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -59,12 +59,45 @@
             </div>
         </header>
         <main>
-            <h1>Welcome to my portfolio!</h1>
+            <section id="about">
+                <h1>About</h1>
+                <div class="keypoints">
+                    <div class="keypoints__col">
+                        <div class="keypoints__col_item keypoints__col_item-right">
+                            <div class="keypoints__col_item-triangle">
+                                <div class="keypoints__col_item-triangle-text">Solution Oriented</div>
+                            </div>
+                            <!-- <div class="keypoints__col_item-triangle-hovertext">I am very solution oriented and enjoy solving challenging tasks.</div> -->
+                        </div>
+                        <div class="keypoints__col_item keypoints__col_item-left">
+                            <div class="keypoints__col_item-triangle">
+                                <div class="keypoints__col_item-triangle-text">Responsive</div>
+                            </div>
+                            <!-- <div class="keypoints__col_item-triangle-hovertext">I always focus on making my solutions responsive.</div> -->
+                        </div>
+                    </div>
+                    <div class="keypoints__col">
+                        <div class="keypoints__col-imgwrapper">
+                            <img src="/img/profile-image_resized.png" class="keypoints__col-imgwrapper-img" alt="Profile photo of Stian" title="Profile photo of Stian" aria-label="Profile photo of Stian" />
+                        </div>
+                    </div>
+                    <div class="keypoints__col">
+                        <div class="keypoints__col_item keypoints__col_item-left">
+                            <div class="keypoints__col_item-triangle">
+                                <div class="keypoints__col_item-triangle-text">Integrations</div>
+                            </div>
+                            <!-- <div class="keypoints__col_item-triangle-hovertext">Integrating things to expand or add new functionality is something I love to develop.</div> -->
+                        </div>
+                        <div class="keypoints__col_item keypoints__col_item-right">
+                            <div class="keypoints__col_item-triangle">
+                                <div class="keypoints__col_item-triangle-text">Structured</div>
+                            </div>
+                            <!-- <div class="keypoints__col_item-triangle-hovertext">I always keep control of my tasks, and if you give me one I will make sure it gets done.</div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            some svada
-            <!-- <div class="header" id="myHeader">
-                <h2>NAVBAR To Fix</h2>
-            </div> -->
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, modi id. Quidem rem praesentium architecto mollitia animi maiores quae, sunt odit blanditiis adipisci modi autem, ipsum veniam incidunt neque
                 dolores?
@@ -97,6 +130,10 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, modi id. Quidem rem praesentium architecto mollitia animi maiores quae, sunt odit blanditiis adipisci modi autem, ipsum veniam incidunt neque
                 dolores?
             </p>
+            <section id="portfolio">
+                <h1>Portfolio</h1>
+            </section>
+
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, modi id. Quidem rem praesentium architecto mollitia animi maiores quae, sunt odit blanditiis adipisci modi autem, ipsum veniam incidunt neque
                 dolores?
@@ -121,6 +158,9 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, modi id. Quidem rem praesentium architecto mollitia animi maiores quae, sunt odit blanditiis adipisci modi autem, ipsum veniam incidunt neque
                 dolores?
             </p>
+            <section id="contact">
+                <h1>Contact</h1>
+            </section>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, modi id. Quidem rem praesentium architecto mollitia animi maiores quae, sunt odit blanditiis adipisci modi autem, ipsum veniam incidunt neque
                 dolores?

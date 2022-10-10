@@ -1,0 +1,43 @@
+.keypoints {
+    display: flex;
+    &__col {
+        width: 30%;
+        //background-color: red;
+        display: flex;
+        flex-direction: column;
+        &-imgwrapper {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &-img {
+                // border: 2px solid black;
+            }
+        }
+        &_item {
+            //background-color: yellow;
+            margin: 2em 0;
+            width: 250px;
+            &-triangle {
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                padding-bottom: 10px;
+                background-color: $light-blue;
+                height: 250px;
+                width: 250px;
+                clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+                &-text {
+                    // color: red;
+                    font-weight: bold;
+                }
+            }
+            &-left {
+                align-self: start;
+            }
+            &-right {
+                align-self: end;
+            }
+        }
+    }
+}
