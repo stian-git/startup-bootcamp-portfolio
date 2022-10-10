@@ -9186,6 +9186,23 @@ p {
   color: #fff;
 }
 
+li a.nav-link {
+  color: #fff;
+}
+
+li a.nav-link.active {
+  color: yellow !important;
+  text-decoration: underline;
+}
+
+.fa-solid {
+  color: white;
+}
+
+.fa-solid:hover {
+  color: #6aabf5;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -9193,27 +9210,117 @@ body {
   background-color: #040044;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .header__navbar {
   padding: 10px 16px;
   background-color: #06005c;
+  top: 0;
+  width: 100%;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.header__navbar-brand {
+  color: white;
+}
+.header__intro {
+  overflow: hidden;
+  height: 100vh;
+  width: 98vw;
+  font-size: 3.5em;
+}
+.header__intro-content {
+  background-image: url("../../img/code_bg.png");
+  width: 130%;
+  height: 130%;
+  rotate: 3deg;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(1px);
+  opacity: 15%;
+}
+.header__intro-content-wrapper {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__intro-content-wrapper-text {
+  font-family: "Caveat", serif;
+  margin: 0;
+  max-width: 450px;
+}
+.header__intro-content-wrapper-image {
+  border: 2px solid white;
+  border-radius: 10px;
+  max-width: 40%;
+}
+.header__intro-arrow {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
 }
 
 .navbar-present .header__navbar {
   position: fixed;
-  top: 0;
-  width: 100%;
+  border-top: none;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 80%;
 }
 
 .navbar-present main {
   padding-top: 102px;
 }
 
+@media (max-width: 991.98px) {
+  .header__intro {
+    font-size: 2.5em;
+  }
+  .header__intro-content-wrapper-text {
+    max-width: 350px;
+  }
+}
+@media (max-width: 767.98px) {
+  .header__intro {
+    padding: 5px;
+    font-size: 3em;
+  }
+  .header__intro-content-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header__intro-content-wrapper-image {
+    margin-top: 3em;
+    max-width: 80%;
+  }
+}
+@media (max-width: 575.98px) {
+  .header__intro {
+    font-size: 2em;
+  }
+  .header__intro-content-wrapper-text {
+    max-width: 90%;
+    text-align: center;
+  }
+}
 .footer {
   background-color: #06005c;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 5em;
+  border-top: 2px solid #fff;
+  margin-top: 4em;
 }
 .footer__content-text {
   margin: 0;

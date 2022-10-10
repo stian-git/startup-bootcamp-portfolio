@@ -8,3 +8,20 @@ h3 {
 p {
     color: $text-light-color;
 }
+
+// navigation
+li a.nav-link {
+    color: $text-light-color;
+}
+li a.nav-link.active {
+    color: yellow !important;
+    text-decoration: underline;
+}
+
+.fa-solid {
+    color: white;
+}
+
+.fa-solid:hover {
+    color: $light-blue;
+}

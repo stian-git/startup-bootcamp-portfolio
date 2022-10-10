@@ -11,38 +11,49 @@
     </head>
     <body>
         <header class="header">
-            here are some svada
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem amet temporibus magni porro vero iusto, ut necessitatibus eos cum, iste voluptatibus repudiandae officia, incidunt reiciendis fugit. Blanditiis esse
-                dicta provident.
-            </p>
+            <div class="header__intro">
+                <div class="header__intro-content"></div>
+                <div class="header__intro-content-wrapper">
+                    <div>
+                        <!-- <p class="header__intro-content-wrapper-text">I`m a solution oriented</p>
+                        <p class="header__intro-content-wrapper-text">web developer who make</p>
+                        <p class="header__intro-content-wrapper-text">things work.</p> -->
+                        <p class="header__intro-content-wrapper-text">I`m a solution oriented web developer who make things work.</p>
+                    </div>
+                    <img
+                        src="/img/Stian_homeoffice_2021_IMG_6529_300px_heigth.jpg"
+                        class="header__intro-content-wrapper-image"
+                        alt="Stian at his home office"
+                        title="Stian at his home office"
+                        aria-label="Stian at his home office"
+                    />
+                </div>
+                <!-- Remember to add and test the link below -->
+                <a href="#about" aria-label="Link to content below" title="Link to content below" alt="Link to content below"><i class="fa-solid fa-circle-arrow-down header__intro-arrow"></i></a>
+            </div>
             <div class="header__navbar">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Stian Martinsen-Stormyr</a>
+                        <a class="navbar-brand header__navbar-brand" href="#">Stian Martinsen-Stormyr</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Portfolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                            </ul>
-                            <!-- <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form> -->
-                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </div>

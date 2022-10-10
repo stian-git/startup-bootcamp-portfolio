@@ -1,30 +1,128 @@
 .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // font-size: 3.5em;
     &__navbar {
         padding: 10px 16px;
         background-color: $header-bg;
+        top: 0;
+        width: 100%;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        &-brand {
+            color: white;
+        }
+    }
+    &__intro {
+        &-content {
+            background-image: url("../../img/code_bg.png");
+            width: 130%;
+            height: 130%;
+            rotate: 3deg;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: blur(1px);
+            opacity: 15%;
+            &-wrapper {
+                position: absolute;
+                height: inherit;
+                width: inherit;
+                top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                &-text {
+                    font-family: $font-quotation;
+                    margin: 0;
+                    max-width: 450px;
+                    // font-size: 3.5em;
+                }
+                &-image {
+                    border: 2px solid white;
+                    border-radius: 10px;
+                    max-width: 40%;
+                }
+            }
+        }
+        &-arrow {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+        }
+        overflow: hidden;
+        height: 100vh;
+        width: 98vw;
+        font-size: 3.5em;
     }
 
     // color: $header-text-color;
 }
 
-// .sticky {
-//     position: fixed;
-//     top: 0;
-//     width: 100%;
-// }
-
-// Add padding to avoid content become hidden at the point of trigger.
-// .sticky + main {
-//     // need to test this!
-//     padding-top: 102px;
-// }
-
+// transforms the navbar when scrolling has reached it:
 .navbar-present .header__navbar {
     position: fixed;
-    top: 0;
-    width: 100%;
+    border-top: none;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 80%;
 }
 
 .navbar-present main {
     padding-top: 102px;
+}
+
+@include media-breakpoint-down(lg) {
+    .header {
+        &__intro {
+            font-size: 2.5em;
+        }
+        &__intro {
+            &-content {
+                &-wrapper {
+                    &-text {
+                        max-width: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .header {
+        &__intro {
+            padding: 5px;
+            font-size: 3em;
+            &-content-wrapper {
+                flex-direction: column;
+                justify-content: center;
+                &-text {
+                }
+                &-image {
+                    margin-top: 3em;
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .header {
+        &__intro {
+            font-size: 2em;
+            &-content {
+                &-wrapper {
+                    &-text {
+                        max-width: 90%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }
