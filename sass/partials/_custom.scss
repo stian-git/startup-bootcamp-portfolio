@@ -1,9 +1,22 @@
 // Fonts
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Roboto:wght@400;500;700&family=Source+Code+Pro&display=swap");
 
-$font-family-sans-serif: sans-serif;
-$font-family-serif: "Roboto Slab", serif;
+$font-family-sans-serif: "Source Code Pro", serif;
+$font-headers: "Roboto", sans-serif;
+$font-quotation: $font-family-sans-serif;
 // Colors:
 
-$bg-color: blue;
+$bg-color: #040044;
+$header-bg: #06005c;
+$light-blue: #6aabf5;
+$text-light-color: #fff;
+$text-dark-color: #000;
+
+$button-color: $light-blue;
+$button-hover-color: #fff;
+
+$navbar-link-color: #fff;
+$navbar-link-hovercolor: $light-blue;
+$header-text-color: #fff;

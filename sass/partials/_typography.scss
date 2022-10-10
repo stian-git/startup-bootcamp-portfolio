@@ -1,5 +1,10 @@
 h1,
 h2,
 h3 {
-    font-family: $font-family-serif;
+    font-family: $font-headers;
+    color: $header-text-color;
+}
+
+p {
+    color: $text-light-color;
 }

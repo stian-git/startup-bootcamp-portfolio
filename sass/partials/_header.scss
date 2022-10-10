@@ -1,0 +1,30 @@
+.header {
+    &__navbar {
+        padding: 10px 16px;
+        background-color: $header-bg;
+    }
+
+    // color: $header-text-color;
+}
+
+// .sticky {
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+// }
+
+// Add padding to avoid content become hidden at the point of trigger.
+// .sticky + main {
+//     // need to test this!
+//     padding-top: 102px;
+// }
+
+.navbar-present .header__navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-present main {
+    padding-top: 102px;
+}

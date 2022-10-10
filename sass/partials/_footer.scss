@@ -1,0 +1,10 @@
+.footer {
+    background-color: $header-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5em;
+    &__content-text {
+        margin: 0;
+    }
+}
