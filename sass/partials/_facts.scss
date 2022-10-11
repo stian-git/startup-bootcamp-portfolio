@@ -1,0 +1,25 @@
+.facts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4em;
+    font-size: 12px;
+    color: white;
+    &__col {
+        max-width: 20vw;
+        &-header {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        &:nth-child(3) {
+            // background-color: red;
+            max-width: 25vw;
+        }
+        &-fact {
+            &-header {
+                padding-right: 1em;
+                // font-size: 12px;
+                line-height: 26px;
+            }
+        }
+    }
+}

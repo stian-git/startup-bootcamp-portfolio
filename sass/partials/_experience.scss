@@ -1,0 +1,66 @@
+.experience {
+    background-color: $light-blue;
+    border: 2px solid white;
+    border-radius: 0.375rem;
+    // border-top-left-radius: 0.375rem;
+    // border-bottom-left-radius: 0.375rem;
+    &__menu {
+        background-color: $header-bg;
+
+        &-col {
+            padding-top: 1em;
+            padding-bottom: 1em;
+            min-width: max-content;
+            border: none;
+            &-item {
+                border-top-right-radius: 0 !important;
+                border-bottom-right-radius: 0 !important;
+                font-family: $font-headers;
+                color: white;
+                &.active {
+                    border-radius: 0 !important;
+                    background-color: $light-blue !important;
+                    color: $text-dark-color !important;
+                    border-color: $light-blue !important;
+                }
+                &:nth-last-child(1) {
+                    // background-color: red;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+    &__content {
+        padding: 1em 2em;
+        &-text {
+            color: $text-dark-color;
+            &-wrapper {
+                margin-bottom: 4em;
+            }
+            &-title {
+                color: #000;
+                margin-bottom: 1em;
+            }
+            &-link {
+                color: #000;
+                font-size: 0.8em;
+                display: block;
+            }
+            &-subtitle {
+                color: #000;
+                font-size: 1.3em;
+                // line-height: 2.5em;
+                margin-top: 2em;
+            }
+            &-body {
+                color: #000;
+                &-highlight {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+// Title, link, subtitle, text
+// wrapper = splits elements.

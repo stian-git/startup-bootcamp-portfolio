@@ -29,3 +29,8 @@ li a.nav-link.active {
 .fa-solid:hover {
     color: $light-blue;
 }
+
+// for personal facts, 2nd columnd, but also affects navbar.
+li {
+    line-height: 24px;
+}
