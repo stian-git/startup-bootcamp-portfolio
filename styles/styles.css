@@ -9473,3 +9473,46 @@ main {
 .experience__content-text-body-highlight {
   font-weight: bold;
 }
+
+.project {
+  background-color: #08007a;
+  border-radius: 15px;
+  padding: 1em 3em;
+  font-size: 12px;
+  margin: 4em 0;
+}
+.project__row {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 2em;
+}
+.project__row-title {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.project__row-header {
+  margin-top: 2em;
+  font-size: 18px;
+  font-weight: bold;
+}
+.project__row-listitem {
+  color: white;
+}
+.project__row-image {
+  max-height: 30vh;
+  max-width: 30vw;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.project__row-right {
+  min-width: 40%;
+  align-self: center;
+  text-align: center;
+}
+.project__row-icon {
+  font-size: 3em;
+  padding: 10px;
+}
+.project__row-icon:hover {
+  color: #6aabf5;
+}

@@ -1,0 +1,45 @@
+.project {
+    background-color: $box-dark-bg;
+    border-radius: 15px;
+    padding: 1em 3em;
+    font-size: 12px;
+    margin: 4em 0;
+    &__row {
+        justify-content: space-between;
+        display: flex;
+        margin-top: 2em;
+        &-title {
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+        &-header {
+            margin-top: 2em;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        &-listitem {
+            color: white;
+        }
+        &-image {
+            max-height: 30vh;
+            max-width: 30vw;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        &-right {
+            min-width: 40%;
+            align-self: center;
+            text-align: center;
+        }
+        &-icon {
+            font-size: 3em;
+            padding: 10px;
+            &:hover {
+                color: $light-blue;
+            }
+        }
+        // font-size: 1.5em;
+    }
+}
+
+//title, headers, keywords, ul
