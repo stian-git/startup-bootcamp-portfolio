@@ -38,8 +38,56 @@
                 color: $light-blue;
             }
         }
+        &-link {
+            color: white;
+            text-decoration: none;
+            &-text {
+                display: inline;
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                    color: $light-blue;
+                }
+            }
+        }
+
         // font-size: 1.5em;
     }
 }
 
 //title, headers, keywords, ul
+.project.active {
+    background-color: $light-blue;
+
+    .project {
+        &__row {
+            &-icon {
+                color: black;
+                &:hover {
+                    color: white;
+                }
+            }
+            &-title,
+            &-header,
+            &-body,
+            &-listitem {
+                color: black;
+            }
+            &-link {
+                // color: $light-blue;
+                display: inline-block;
+                color: black;
+                &-text {
+                    color: black;
+                    &:hover {
+                        color: white;
+                    }
+                }
+                &:hover {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

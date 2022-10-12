@@ -9516,3 +9516,42 @@ main {
 .project__row-icon:hover {
   color: #6aabf5;
 }
+.project__row-link {
+  color: white;
+  text-decoration: none;
+}
+.project__row-link-text {
+  display: inline;
+  text-decoration: underline;
+}
+.project__row-link-text:hover {
+  text-decoration: none;
+  color: #6aabf5;
+}
+
+.project.active {
+  background-color: #6aabf5;
+}
+.project.active .project__row-icon {
+  color: black;
+}
+.project.active .project__row-icon:hover {
+  color: white;
+}
+.project.active .project__row-title, .project.active .project__row-header, .project.active .project__row-body, .project.active .project__row-listitem {
+  color: black;
+}
+.project.active .project__row-link {
+  display: inline-block;
+  color: black;
+}
+.project.active .project__row-link-text {
+  color: black;
+}
+.project.active .project__row-link-text:hover {
+  color: white;
+}
+.project.active .project__row-link:hover {
+  color: white;
+  text-decoration: none;
+}
