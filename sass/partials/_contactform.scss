@@ -7,6 +7,14 @@
                 align-self: start;
             }
         }
+        &-innerlabel {
+            color: black;
+            font-style: italic;
+            // display: none;
+        }
+        &-textarea {
+            height: 130px !important;
+        }
     }
     &__button {
         &-send {
@@ -14,3 +22,8 @@
         }
     }
 }
+
+//To change to small screen:
+// - toggle display: none on inner labels (default: block / none)
+// - toggle display of outer labels (inline-block / none)
+// - change padding on inputs to: 0 0.75em

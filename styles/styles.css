@@ -9569,6 +9569,13 @@ main {
 .contact__row-labelcontainer-aligntop {
   align-self: start;
 }
+.contact__row-innerlabel {
+  color: black;
+  font-style: italic;
+}
+.contact__row-textarea {
+  height: 130px !important;
+}
 .contact__button-send {
   float: right;
 }

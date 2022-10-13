@@ -8,10 +8,10 @@ export default function sendContactForm(e) {
     const contactName = formNameField.value;
     const contactSubject = formSubjectField.value;
     const contactMessage = formMessageField.value;
-    console.log(contactEmail);
-    console.log(contactName);
-    console.log(contactSubject);
-    console.log(contactMessage);
+    //console.log(contactEmail);
+    //console.log(contactName);
+    //console.log(contactSubject);
+    //console.log(contactMessage);
     Email.send({
         SecureToken: "46d08c8f-014e-44f3-aad3-647d3b2f7d5f",
         To: "smartinsen80@gmail.com",
@@ -19,4 +19,5 @@ export default function sendContactForm(e) {
         Subject: `Contact: ${contactSubject}`,
         Body: `<h2>Message from: ${contactName} (${contactEmail})</h2><h3>${contactSubject}</h3><p>${contactMessage}</p><p>Sent from Portfolio page.</p>`,
     }).then((message) => alert(message));
+    // Add a modal to display message.
 }
