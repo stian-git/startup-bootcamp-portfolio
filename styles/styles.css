@@ -9477,7 +9477,7 @@ main {
 .project {
   background-color: #08007a;
   border-radius: 15px;
-  padding: 1em 3em;
+  padding: 1em 3em 3em 3em;
   font-size: 12px;
   margin: 4em 0;
 }
@@ -9515,6 +9515,7 @@ main {
 }
 .project__row-icon:hover {
   color: #6aabf5;
+  cursor: pointer;
 }
 .project__row-link {
   color: white;
@@ -9535,6 +9536,9 @@ main {
 .project.active .project__row-icon {
   color: black;
 }
+.project.active .project__row-icon-magnifier {
+  display: none;
+}
 .project.active .project__row-icon:hover {
   color: white;
 }
@@ -9554,4 +9558,17 @@ main {
 .project.active .project__row-link:hover {
   color: white;
   text-decoration: none;
+}
+
+.contact {
+  color: white;
+}
+.contact__row {
+  margin-bottom: 1em;
+}
+.contact__row-labelcontainer-aligntop {
+  align-self: start;
+}
+.contact__button-send {
+  float: right;
 }

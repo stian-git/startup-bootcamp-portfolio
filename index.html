@@ -6,6 +6,7 @@
         <meta name="description" content="Portfolio for Stian Martinsen-Stormyr" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://kit.fontawesome.com/c42e915e6a.js" crossorigin="anonymous"></script>
+        <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
         <link rel="stylesheet" href="styles/styles.css" />
         <title>Stian Martinsen-Stormyr | Portfolio</title>
     </head>
@@ -431,10 +432,12 @@
                             </div>
                         </div>
                         <div class="project__row-right">
-                            <div class="project__row-right-top"><i class="fa-solid fa-magnifying-glass fa-2xl project__row-icon"></i><i class="fa-solid fa-share-from-square fa-2xl project__row-icon"></i></div>
+                            <div class="project__row-right-top">
+                                <i class="fa-solid fa-magnifying-glass fa-2xl project__row-icon project__row-icon-magnifier" data-projectid="0"></i><i class="fa-solid fa-share-from-square fa-2xl project__row-icon"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="project__row">
+                    <div class="project__row visibilitytoggler">
                         <div class="project__row-left-bottom">
                             <p class="project__row-header">Highlighted features:</p>
                             <ul>
@@ -449,7 +452,7 @@
                             <img src="/img/blog_desktop+mobile.jpg" class="project__row-image" alt="Screenshot of Cabin Blog" title="Screenshot of Cabin Blog" aria-label="Screenshot of Cabin Blog" />
                         </div>
                     </div>
-                    <div class="">
+                    <div class="visibilitytoggler">
                         <p class="project__row-header">Description:</p>
                         <p class="project__row-body">
                             A blog front-end with content populated from a Wordpress site used as backend CMS. Users can send messages to the blogger which will be stored in Wordpress. Visitors can read and comment on blogposts
@@ -465,7 +468,7 @@
                             <div class="project__row-left-top">
                                 <h3 class="project__row-title">Webshop: Rainy Days</h3>
                                 <p class="project__row-header">Keywords:</p>
-                                <p>Webshop, Basket-handling, Headless CMS, Wordpress w/WooCommerce APIs as backend</p>
+                                <p class="project__row-body">Webshop, Basket-handling, Headless CMS, Wordpress w/WooCommerce APIs as backend</p>
                                 <p class="project__row-header">Repository</p>
                                 <a href="" class="project__row-link">
                                     <i class="fa-brands fa-github fa-2xl project__row-icon"></i>
@@ -474,10 +477,12 @@
                             </div>
                         </div>
                         <div class="project__row-right">
-                            <div class="project__row-right-top"><i class="fa-solid fa-magnifying-glass fa-2xl project__row-icon"></i><i class="fa-solid fa-share-from-square fa-2xl project__row-icon"></i></div>
+                            <div class="project__row-right-top">
+                                <i class="fa-solid fa-magnifying-glass fa-2xl project__row-icon project__row-icon-magnifier" data-projectid="1"></i><i class="fa-solid fa-share-from-square fa-2xl project__row-icon"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="project__row">
+                    <div class="project__row visibilitytoggler" hidden>
                         <div class="project__row-left-bottom">
                             <p class="project__row-header">Highlighted features:</p>
                             <ul>
@@ -494,7 +499,7 @@
                             <img src="/img/rainydays_desktop+mobile.jpg" class="project__row-image" alt="Screenshot of Rainy Days" title="Screenshot of Rainy Days" aria-label="Screenshot of Rainy Days" />
                         </div>
                     </div>
-                    <div class="">
+                    <div class="visibilitytoggler" hidden>
                         <p class="project__row-header">Description:</p>
                         <p class="project__row-body">
                             A webshop for jackets using a backend made of Wordpress with WooCommerce-integration. All product information are administrated in WooCommerce and retrieved through the REST-Api. The basket are stored
@@ -521,10 +526,12 @@
                             </div>
                         </div>
                         <div class="project__row-right">
-                            <div class="project__row-right-top"><i class="fa-solid fa-magnifying-glass fa-2xl project__row-icon"></i><i class="fa-solid fa-share-from-square fa-2xl project__row-icon"></i></div>
+                            <div class="project__row-right-top">
+                                <i class="fa-solid fa-magnifying-glass fa-2xl project__row-icon project__row-icon-magnifier" data-projectid="2"></i><i class="fa-solid fa-share-from-square fa-2xl project__row-icon"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="project__row">
+                    <div class="project__row visibilitytoggler" hidden>
                         <div class="project__row-left-bottom">
                             <p class="project__row-header">Highlighted features:</p>
                             <ul>
@@ -539,7 +546,7 @@
                             <img src="/img/sciencemuseum_desktop+mobile.jpg" class="project__row-image" alt="Screenshot of Science Museum" title="Screenshot of Science Museum" aria-label="Screenshot of Science Museum" />
                         </div>
                     </div>
-                    <div class="">
+                    <div class="visibilitytoggler" hidden>
                         <p class="project__row-header">Description:</p>
                         <p class="project__row-body">
                             An informational web page for a science museum. Built to inform potential visitors about the museum, it's exhibitions and special events. An attention grabber designed for kids (Find Eve), encourages
@@ -555,20 +562,53 @@
 
             <section id="contact">
                 <h1>Contact</h1>
+                <!-- Add some here -->
+                <form class="contact">
+                    <div class="row g-3 align-items-center contact__row">
+                        <div class="col-md-2 contact__row-labelcontainer">
+                            <label for="form_email" class="form-label">Email:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="email" class="form-control" id="form_email" aria-label="Email" />
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center contact__row">
+                        <div class="col-md-2 contact__row-labelcontainer">
+                            <label for="form_name" class="form-label">Name:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="form_name" aria-label="Name" />
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center contact__row">
+                        <div class="col-md-2 contact__row-labelcontainer">
+                            <label for="form_subject" class="form-label">Subject:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="form_subject" aria-label="Subject" />
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center contact__row">
+                        <div class="col-md-2 contact__row-labelcontainer-aligntop">
+                            <label for="form_message" class="form-label">Message:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <textarea class="form-control" id="form_message" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center contact__row">
+                        <div class="col-md-6">
+                            <button type="submit" class="btn btn-primary contact__button-send">Send</button>
+                        </div>
+                    </div>
+                </form>
             </section>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, modi id. Quidem rem praesentium architecto mollitia animi maiores quae, sunt odit blanditiis adipisci modi autem, ipsum veniam incidunt neque
-                dolores?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, modi id. Quidem rem praesentium architecto mollitia animi maiores quae, sunt odit blanditiis adipisci modi autem, ipsum veniam incidunt neque
-                dolores?
-            </p>
         </main>
         <footer class="footer">
             <p class="footer__content-text">Stian Martinsen-Stormyr - 2022</p>
         </footer>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/script.js" type="module"></script>
+        <script src="js/smtp.js"></script>
     </body>
 </html>

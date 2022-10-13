@@ -1,4 +1,6 @@
-import { body, headerOffsetTop } from "./components/variables.js";
+import sendContactForm from "./components/sendContactForm.js";
+import toggleVisibleProject from "./components/toggleVisibleProject.js";
+import { allMagnifyingGlasses, body, headerOffsetTop, sendContactFormButton } from "./components/variables.js";
 
 // Adds the sticky-class when the navbar should be locked to the top:
 window.onscroll = () => {
@@ -10,3 +12,9 @@ window.onscroll = () => {
         body.classList.remove("navbar-present");
     }
 };
+
+allMagnifyingGlasses.forEach((icon) => {
+    icon.addEventListener("click", toggleVisibleProject);
+});
+
+sendContactFormButton.addEventListener("click", sendContactForm);

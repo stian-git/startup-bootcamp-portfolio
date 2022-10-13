@@ -1,0 +1,16 @@
+.contact {
+    color: white;
+    &__row {
+        margin-bottom: 1em;
+        &-labelcontainer {
+            &-aligntop {
+                align-self: start;
+            }
+        }
+    }
+    &__button {
+        &-send {
+            float: right;
+        }
+    }
+}

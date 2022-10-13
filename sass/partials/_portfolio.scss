@@ -1,7 +1,7 @@
 .project {
     background-color: $box-dark-bg;
     border-radius: 15px;
-    padding: 1em 3em;
+    padding: 1em 3em 3em 3em;
     font-size: 12px;
     margin: 4em 0;
     &__row {
@@ -36,6 +36,7 @@
             padding: 10px;
             &:hover {
                 color: $light-blue;
+                cursor: pointer;
             }
         }
         &-link {
@@ -63,6 +64,9 @@
         &__row {
             &-icon {
                 color: black;
+                &-magnifier {
+                    display: none;
+                }
                 &:hover {
                     color: white;
                 }
