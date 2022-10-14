@@ -4,10 +4,17 @@
     padding: 1em 3em 3em 3em;
     font-size: 12px;
     margin: 4em 0;
+    &-mobileonly {
+        &-left {
+            text-align: left;
+        }
+        //display: none;
+    }
     &__row {
         justify-content: space-between;
         display: flex;
         margin-top: 2em;
+        min-height: 235px;
         &-title {
             font-weight: bold;
             margin-bottom: 1em;
@@ -30,10 +37,16 @@
             min-width: 40%;
             align-self: center;
             text-align: center;
+            &-bottom {
+                align-self: center;
+            }
         }
         &-icon {
             font-size: 3em;
             padding: 10px;
+            &-mobile {
+                font-size: 4em;
+            }
             &:hover {
                 color: $light-blue;
                 cursor: pointer;
@@ -61,6 +74,9 @@
     background-color: $light-blue;
 
     .project {
+        &-mobileonly {
+            //display: none;
+        }
         &__row {
             &-icon {
                 color: black;
@@ -93,5 +109,62 @@
                 }
             }
         }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    // small screen styling here...
+    .project {
+        &-desktoponly {
+            display: none;
+        }
+        &__row {
+            &-title {
+                text-align: center;
+                font-weight: 400;
+                font-size: 3em;
+            }
+            &-image {
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    .project.active {
+        .project {
+            &-desktoponly {
+                display: none;
+            }
+        }
+    }
+}
+
+// mobileonly
+// desktoponly
+
+@include media-breakpoint-up(md) {
+    .project {
+        &-mobileonly {
+            display: none;
+        }
+    }
+    .project.active {
+        .project {
+            &-mobileonly {
+                display: none;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .project {
+        padding: 1em 10em 3em 10em;
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .project {
+        padding: 1em 15em 3em 15em;
     }
 }

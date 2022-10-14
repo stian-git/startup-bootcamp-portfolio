@@ -9490,10 +9490,14 @@ button:disabled {
   font-size: 12px;
   margin: 4em 0;
 }
+.project-mobileonly-left {
+  text-align: left;
+}
 .project__row {
   justify-content: space-between;
   display: flex;
   margin-top: 2em;
+  min-height: 235px;
 }
 .project__row-title {
   font-weight: bold;
@@ -9518,9 +9522,15 @@ button:disabled {
   align-self: center;
   text-align: center;
 }
+.project__row-right-bottom {
+  align-self: center;
+}
 .project__row-icon {
   font-size: 3em;
   padding: 10px;
+}
+.project__row-icon-mobile {
+  font-size: 4em;
 }
 .project__row-icon:hover {
   color: #6aabf5;
@@ -9569,6 +9579,41 @@ button:disabled {
   text-decoration: none;
 }
 
+@media (max-width: 767.98px) {
+  .project-desktoponly {
+    display: none;
+  }
+  .project__row-title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 3em;
+  }
+  .project__row-image {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .project.active .project-desktoponly {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .project-mobileonly {
+    display: none;
+  }
+  .project.active .project-mobileonly {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .project {
+    padding: 1em 10em 3em 10em;
+  }
+}
+@media (min-width: 1400px) {
+  .project {
+    padding: 1em 15em 3em 15em;
+  }
+}
 .contact {
   display: flex;
   flex-direction: column;
