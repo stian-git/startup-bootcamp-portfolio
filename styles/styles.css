@@ -9227,6 +9227,10 @@ main {
   margin: auto;
 }
 
+button:disabled {
+  filter: blur(2px);
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -9587,6 +9591,18 @@ main {
   padding: 0 10px;
   border-radius: 10px;
   margin-bottom: 4px;
+  color: coral;
+  opacity: 0;
+}
+.contact__row-requirement-field-checkicon {
+  color: lawngreen;
+}
+.contact__row-requirement-field-checkicon:hover {
+  color: lawngreen;
+}
+.contact__row-requirement-field-show {
+  opacity: 1;
+  animation: showRequirement 1s;
 }
 .contact__button-send {
   float: right;
@@ -9612,5 +9628,13 @@ main {
   }
   .contact__row-textarea {
     padding-top: 0.75em !important;
+  }
+}
+@keyframes showRequirement {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
   }
 }

@@ -14,3 +14,7 @@ main {
     width: 80%;
     margin: auto;
 }
+
+button:disabled {
+    filter: blur(2px);
+}

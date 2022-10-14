@@ -2,7 +2,22 @@ import isEmailSyntaxValid from "./components/isEmailSyntaxValid.js";
 import minLengthCheck from "./components/minLengthCheck.js";
 import sendContactForm from "./components/sendContactForm.js";
 import toggleVisibleProject from "./components/toggleVisibleProject.js";
-import { allMagnifyingGlasses, body, contactForm, formEmailField, formMessageField, headerOffsetTop, minMessageLength, sendContactFormButton } from "./components/variables.js";
+import {
+    allMagnifyingGlasses,
+    body,
+    contactForm,
+    formEmailField,
+    formMessageField,
+    formNameField,
+    formRequirementFieldEmail,
+    formRequirementFieldMessage,
+    formRequirementFieldName,
+    formRequirementFieldSubject,
+    formSubjectField,
+    headerOffsetTop,
+    minMessageLength,
+    sendContactFormButton,
+} from "./components/variables.js";
 
 // Adds the sticky-class when the navbar should be locked to the top:
 window.onscroll = () => {
@@ -30,4 +45,29 @@ contactForm.addEventListener("keyup", (e) => {
     } else {
         sendContactFormButton.disabled = true;
     }
+});
+
+formMessageField.addEventListener("keyup", () => {
+    const charsLeft = minMessageLength - formMessageField.value.trim().length;
+    console.log("Chars Left: " + charsLeft);
+    if (charsLeft > 0) {
+        // show message
+        formRequirementFieldMessage.innerHTML = `You need ${charsLeft} more characters.`;
+    } else {
+        // hide message, show checkbox;
+        formRequirementFieldMessage.innerHTML = `<i class="fa-solid fa-circle-check contact__row-requirement-field-checkicon"></i>`;
+    }
+    formRequirementFieldMessage.classList.add("contact__row-requirement-field-show");
+});
+
+formEmailField.addEventListener("keyup", () => {
+    formRequirementFieldEmail.classList.add("contact__row-requirement-field-show");
+});
+
+formSubjectField.addEventListener("keyup", () => {
+    formRequirementFieldSubject.classList.add("contact__row-requirement-field-show");
+});
+
+formNameField.addEventListener("keyup", () => {
+    formRequirementFieldName.classList.add("contact__row-requirement-field-show");
 });

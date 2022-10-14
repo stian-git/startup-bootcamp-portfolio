@@ -25,8 +25,18 @@
                 padding: 0 10px;
                 border-radius: 10px;
                 margin-bottom: 4px;
-                //background-color: red;
-                //opacity: 0;
+                color: $errorcolor;
+                opacity: 0;
+                &-checkicon {
+                    color: $successcolor;
+                    &:hover {
+                        color: $successcolor;
+                    }
+                }
+                &-show {
+                    opacity: 1;
+                    animation: showRequirement 1s;
+                }
             }
         }
     }
@@ -42,9 +52,6 @@
         }
     }
 }
-
-// requirement: margin 0, float right.
-// row needs margin-bottom 0.
 
 @include media-breakpoint-down(md) {
     .contact {
@@ -72,5 +79,11 @@
     }
 }
 
-.fa-asterisk {
+@keyframes showRequirement {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
