@@ -18,3 +18,8 @@ main {
 button:disabled {
     filter: blur(2px);
 }
+
+#contact {
+    display: flex;
+    flex-direction: column;
+}

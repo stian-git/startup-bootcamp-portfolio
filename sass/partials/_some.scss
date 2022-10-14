@@ -1,0 +1,16 @@
+.some {
+    margin-bottom: 4em;
+    &__link {
+        text-decoration: none;
+        //color: $light-blue;
+        &-icon {
+            font-size: 4em;
+            line-height: 1em;
+            color: $light-blue;
+            &:hover {
+                color: white;
+            }
+            //background-color: black;
+        }
+    }
+}

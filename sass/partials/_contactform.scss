@@ -1,7 +1,10 @@
 .contact {
+    display: flex;
+    flex-direction: column;
     color: white;
     &__row {
         margin-bottom: 1em;
+        justify-content: center;
         &-labelcontainer {
             &-aligntop {
                 align-self: start;

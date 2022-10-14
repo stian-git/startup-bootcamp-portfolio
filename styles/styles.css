@@ -9231,6 +9231,11 @@ button:disabled {
   filter: blur(2px);
 }
 
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -9565,10 +9570,13 @@ button:disabled {
 }
 
 .contact {
+  display: flex;
+  flex-direction: column;
   color: white;
 }
 .contact__row {
   margin-bottom: 1em;
+  justify-content: center;
 }
 .contact__row-labelcontainer-aligntop {
   align-self: start;
@@ -9637,4 +9645,18 @@ button:disabled {
   100% {
     opacity: 100%;
   }
+}
+.some {
+  margin-bottom: 4em;
+}
+.some__link {
+  text-decoration: none;
+}
+.some__link-icon {
+  font-size: 4em;
+  line-height: 1em;
+  color: #6aabf5;
+}
+.some__link-icon:hover {
+  color: white;
 }
