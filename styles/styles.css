@@ -9574,6 +9574,9 @@ button:disabled {
   flex-direction: column;
   color: white;
 }
+.contact__header {
+  margin: 2em;
+}
 .contact__row {
   margin-bottom: 1em;
   justify-content: center;
@@ -9626,6 +9629,9 @@ button:disabled {
   .contact__row-labelcontainer {
     display: none;
   }
+  .contact__header {
+    margin: 2em 0;
+  }
 }
 @media (min-width: 768px) {
   .contact__row-innerlabel {
@@ -9647,6 +9653,7 @@ button:disabled {
   }
 }
 .some {
+  align-self: center;
   margin-bottom: 4em;
 }
 .some__link {
