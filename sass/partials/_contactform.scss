@@ -15,15 +15,62 @@
         &-textarea {
             height: 130px !important;
         }
+        &-requirement {
+            margin-bottom: 0;
+            &-field {
+                float: right;
+                margin: 0;
+                font-style: italic;
+                font-size: 0.9em;
+                padding: 0 10px;
+                border-radius: 10px;
+                margin-bottom: 4px;
+                //background-color: red;
+                //opacity: 0;
+            }
+        }
     }
     &__button {
         &-send {
             float: right;
+            font-family: $font-headers;
+            font-weight: bold;
+            padding: 6px 32px;
+            &:hover {
+                background-color: white;
+            }
         }
     }
 }
 
-//To change to small screen:
-// - toggle display: none on inner labels (default: block / none)
-// - toggle display of outer labels (inline-block / none)
-// - change padding on inputs to: 0 0.75em
+// requirement: margin 0, float right.
+// row needs margin-bottom 0.
+
+@include media-breakpoint-down(md) {
+    .contact {
+        &__row {
+            &-labelcontainer {
+                display: none;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .contact {
+        &__row {
+            &-innerlabel {
+                display: none;
+            }
+            &-input {
+                padding: 0 0.75em !important;
+            }
+            &-textarea {
+                padding-top: 0.75em !important;
+            }
+        }
+    }
+}
+
+.fa-asterisk {
+}

@@ -564,44 +564,66 @@
                 <h1>Contact</h1>
                 <!-- Add some here -->
                 <form class="contact">
-                    <div class="row g-3 align-items-center contact__row">
-                        <div class="col-md-2 contact__row-labelcontainer">
-                            <label for="form_email" class="form-label">Email:</label>
-                        </div>
-                        <div class="col-md-4 form-floating">
-                            <input type="email" class="form-control" id="form_email" aria-label="Email" placeholder="user@domain.com" />
-                            <label for="form_email" class="contact__row-innerlabel">user@domain.com</label>
+                    <div class="row g-3 align-items-center contact__row contact__row-requirement contact__row-requirement-name">
+                        <div class="col-md-9 col-lg-7 form-floating">
+                            <p class="contact__row-requirement-field contact__row-requirement-field-name">You need x more characters</p>
                         </div>
                     </div>
                     <div class="row g-3 align-items-center contact__row">
                         <div class="col-md-2 contact__row-labelcontainer">
                             <label for="form_name" class="form-label">Name:</label>
                         </div>
-                        <div class="col-md-4 form-floating">
-                            <input type="text" class="form-control" id="form_name" aria-label="Name" placeholder="Name" />
+                        <div class="col-md-7 col-lg-5 form-floating">
+                            <input type="text" class="form-control contact__row-input" id="form_name" aria-label="Name" placeholder="Name" />
                             <label for="form_name" class="contact__row-innerlabel">Name</label>
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center contact__row contact__row-requirement contact__row-requirement-email">
+                        <div class="col-md-9 col-lg-7 form-floating">
+                            <p class="contact__row-requirement-field contact__row-requirement-field-email">A valid email address required</p>
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center contact__row">
+                        <div class="col-md-2 contact__row-labelcontainer">
+                            <label for="form_email" class="form-label">Email: </label>
+                        </div>
+                        <div class="col-md-7 col-lg-5 form-floating">
+                            <input type="email" class="form-control contact__row-input" id="form_email" aria-label="Email" placeholder="Email" />
+                            <label for="form_email" class="contact__row-innerlabel">Email</label>
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center contact__row contact__row-requirement contact__row-requirement-subject">
+                        <div class="col-md-9 col-lg-7 form-floating">
+                            <p class="contact__row-requirement-field contact__row-requirement-field-subject">You need x more characters</p>
                         </div>
                     </div>
                     <div class="row g-3 align-items-center contact__row">
                         <div class="col-md-2 contact__row-labelcontainer">
                             <label for="form_subject" class="form-label">Subject:</label>
                         </div>
-                        <div class="col-md-4 form-floating">
-                            <input type="text" class="form-control" id="form_subject" aria-label="Subject" placeholder="Subject" />
+                        <div class="col-md-7 col-lg-5 form-floating">
+                            <input type="text" class="form-control contact__row-input" id="form_subject" aria-label="Subject" placeholder="Subject" />
                             <label for="form_subject" class="contact__row-innerlabel">Subject</label>
                         </div>
                     </div>
+                    <div class="row g-3 align-items-center contact__row contact__row-requirement contact__row-requirement-message">
+                        <div class="col-md-9 col-lg-7 form-floating">
+                            <p class="contact__row-requirement-field contact__row-requirement-field-message">You need x more characters</p>
+                        </div>
+                    </div>
+
                     <div class="row g-3 align-items-center contact__row">
-                        <div class="col-md-2 contact__row-labelcontainer-aligntop">
+                        <div class="col-md-2 contact__row-labelcontainer contact__row-labelcontainer-aligntop">
                             <label for="form_message" class="form-label">Message:</label>
                         </div>
-                        <div class="col-md-4 form-floating">
-                            <textarea class="form-control contact__row-textarea" id="form_message" placeholder="Message"></textarea>
+
+                        <div class="col-md-7 col-lg-5 form-floating">
+                            <textarea class="form-control contact__row-input contact__row-textarea" id="form_message" placeholder="Message"></textarea>
                             <label for="form_message" class="contact__row-innerlabel">Message</label>
                         </div>
                     </div>
                     <div class="row g-3 align-items-center contact__row">
-                        <div class="col-md-6">
+                        <div class="col-md-9 col-lg-7">
                             <button type="submit" class="btn btn-primary contact__button-send">Send</button>
                         </div>
                     </div>
