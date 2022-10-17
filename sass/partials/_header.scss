@@ -127,5 +127,24 @@
                 }
             }
         }
+        &__navbar {
+            &-brand {
+                &-desktoponly {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .header {
+        &__navbar {
+            &-brand {
+                &-mobileonly {
+                    display: none;
+                }
+            }
+        }
     }
 }

@@ -47,6 +47,7 @@
                 display: block;
                 &-address {
                     color: black;
+                    line-break: anywhere;
                     &:hover {
                         color: white;
                     }
@@ -60,6 +61,7 @@
             }
             &-body {
                 color: #000;
+                margin-bottom: 2em;
                 &-highlight {
                     font-weight: bold;
                 }
