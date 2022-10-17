@@ -9528,6 +9528,7 @@ button:disabled {
 .project__row-icon {
   font-size: 3em;
   padding: 10px;
+  margin-top: 10px;
 }
 .project__row-icon-mobile {
   font-size: 4em;
@@ -9548,9 +9549,15 @@ button:disabled {
   text-decoration: none;
   color: #6aabf5;
 }
+.project-mobileandactiveonly {
+  display: none;
+}
 
 .project.active {
   background-color: #6aabf5;
+}
+.project.active .project-mobileandactiveonly {
+  display: inherit;
 }
 .project.active .project__row-icon {
   color: black;
@@ -9584,7 +9591,6 @@ button:disabled {
     display: none;
   }
   .project__row-title {
-    text-align: center;
     font-weight: 400;
     font-size: 3em;
   }
