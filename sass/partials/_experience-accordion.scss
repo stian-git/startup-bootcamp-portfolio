@@ -1,0 +1,16 @@
+// @include media-breakpoint-down(md) {
+// }
+
+.accordion {
+    &-button {
+        &:not(.collapsed) {
+            opacity: 75%;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .mobileexperience {
+        display: none;
+    }
+}

@@ -45,6 +45,12 @@
                 color: #000;
                 font-size: 0.8em;
                 display: block;
+                &-address {
+                    color: black;
+                    &:hover {
+                        color: white;
+                    }
+                }
             }
             &-subtitle {
                 color: #000;
@@ -62,5 +68,12 @@
     }
 }
 
+//class="experience__content-text-link-address"
 // Title, link, subtitle, text
 // wrapper = splits elements.
+
+@include media-breakpoint-down(lg) {
+    .experience {
+        display: none;
+    }
+}
