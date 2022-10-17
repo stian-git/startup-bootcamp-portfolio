@@ -1,0 +1,16 @@
+.cvsection {
+    display: contents;
+    &__wrapper {
+        background-color: $header-bg;
+        margin: 2em 0;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        padding: 2em;
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        &-link {
+            display: block;
+        }
+    }
+}
