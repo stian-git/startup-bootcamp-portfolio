@@ -9402,12 +9402,49 @@ button:disabled {
   align-self: end;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .keypoints__col-imgwrapper-img {
+    width: 150%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .keypoints {
+    flex-direction: column;
+  }
+  .keypoints__col {
+    flex-direction: row;
+    justify-content: center;
+    width: unset;
+  }
+  .keypoints__col_item {
+    margin: 2em 10px 7em 10px;
+  }
+}
+@media (max-width: 767.98px) {
+  .keypoints__col_item-triangle-hovertext {
+    font-size: 14px;
+  }
+  .keypoints__col-imgwrapper {
+    margin-bottom: 5em;
+  }
+}
+@media (max-width: 575.98px) {
+  .keypoints {
+    flex-direction: column;
+    align-items: center;
+  }
+  .keypoints__col {
+    width: unset;
+    display: block;
+  }
+}
 .facts {
   display: flex;
   justify-content: space-between;
   margin-bottom: 4em;
   font-size: 12px;
   color: white;
+  margin-top: 4em;
 }
 .facts__col {
   max-width: 20vw;
@@ -9424,6 +9461,34 @@ button:disabled {
   line-height: 26px;
 }
 
+@media (max-width: 991.98px) {
+  .facts {
+    display: grid;
+    grid-template-areas: "who who" "what facts";
+    grid-gap: 3em;
+  }
+  .facts__col {
+    max-width: unset;
+  }
+  .facts__col:nth-child(1) {
+    grid-area: who;
+  }
+  .facts__col:nth-child(2) {
+    grid-area: what;
+  }
+  .facts__col:nth-child(3) {
+    grid-area: facts;
+    max-width: unset;
+  }
+}
+@media (max-width: 767.98px) {
+  .facts {
+    grid-template-areas: "who" "what" "facts";
+  }
+  .facts__col-fact-header {
+    padding-right: 4em;
+  }
+}
 .experience {
   background-color: #6aabf5;
   border: 2px solid white;

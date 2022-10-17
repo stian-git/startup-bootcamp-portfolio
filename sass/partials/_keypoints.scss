@@ -54,3 +54,56 @@
         }
     }
 }
+
+@include media-breakpoint-between(md, lg) {
+    .keypoints {
+        &__col {
+            &-imgwrapper {
+                &-img {
+                    width: 150%;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-between(sm, md) {
+    .keypoints {
+        flex-direction: column;
+        &__col {
+            flex-direction: row;
+            justify-content: center;
+            width: unset;
+            &_item {
+                margin: 2em 10px 7em 10px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .keypoints {
+        &__col {
+            &_item {
+                &-triangle {
+                    &-hovertext {
+                        font-size: 14px;
+                    }
+                }
+            }
+            &-imgwrapper {
+                margin-bottom: 5em;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(sm) {
+    .keypoints {
+        flex-direction: column;
+        align-items: center;
+        &__col {
+            width: unset;
+            display: block;
+        }
+    }
+}
