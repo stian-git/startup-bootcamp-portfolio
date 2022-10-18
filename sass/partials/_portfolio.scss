@@ -1,3 +1,12 @@
+#portfolio {
+    margin-top: 24em;
+}
+@include media-breakpoint-down(sm) {
+    #portfolio {
+        margin-top: 30em;
+    }
+}
+
 .project {
     background-color: $box-dark-bg;
     border-radius: 15px;
