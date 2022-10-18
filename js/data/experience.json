@@ -1,0 +1,226 @@
+{
+    "work": [
+        {
+            "company": "Best of Breed As",
+            "period": "2007-2021",
+            "title": "Technical Manager and Part Owner",
+            "url": "https://www.bestofbreed.no",
+            "description": [
+                "I was recommended to apply to this job and I was the first to be hired after the general manager. Later on I became a part owner of the company. I started out as a Product specialist for third party print- and scan-solutions, but in a small company like this we had many roles in the beginning. For a while I handled orders, licenses, pre-sales, server administration, and support to mention some.",
+                "Main tasks through the years have been to support our resellers and the endusers in presales, installation and support of our products. Endusers were all kind of companies and organizations from just a few to many thousands of endusers.",
+                "I worked both remote and onsite at customers all over Norway. English, written and orally, was used daily to communicate with the manufacturers.",
+                "I also became a Technical Manager, and the last two years I started focusing on RPA which opened new doors for me."
+            ]
+        },
+        {
+            "company": "Netsolution AS",
+            "period": "2002-2007",
+            "title": "IT Consultant",
+            "url": "https://www.netsolution.no",
+            "description": [
+                "My first full time job after completing my studies. The first years the Company was named Office Integrasjon AS, but in 2006 we merged with Netsolution which already were located in the same building.",
+                "I worked as an IT-consultant with server admin- and support-tasks for our customers. With my education I also got the responsibility to install printers, MFDs and third party solutions on them. My network skills gave me a benefit that few other MFD-techicians had at the time when everything became more digital."
+            ]
+        },
+        {
+            "company": "Siemens Business Services AS",
+            "period": "2001-2002",
+            "title": "IT Consultant",
+            "url": null,
+            "description": [
+                "Got headhunted during my studies and worked part time monitoring networks in the army during the FIS-Basis Project. First level troubleshooting and escalation of incidents was the main part of the job."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "school": "Noroff School of Technology and Digital Media",
+            "class": "Front-End Developer",
+            "period": "2021-2023",
+            "url": "https://www.noroff.no/en/studies/vocational-school/front-end-development",
+            "keywords": ["JavaScript", "HTML", "CSS", "Sass", "BootStrap", "React", "Design", "UI", "UX", "APIs", "Icon-design", "Photo-editing", "BEM", "Forms", "User testing", "Strapi", "Wordpress"],
+            "description": [
+                "Design, Web and Communication Technology, HTML and CSS, Project Methodology, Programming Foundations, JavaScript, Interaction Design, Content Management Systems, Portfolio, CSS Frameworks, Workflow, Startup Bootcamp/Industry Knowledge, JavaScript Frameworks.",
+                "We also have two semester projects and two exams. All lasts for 5 weeks each."
+            ]
+        },
+        {
+            "school": "Næringsakademiet",
+            "class": "Network Administrator",
+            "period": "2000-2002",
+            "url": null,
+            "keywords": ["Routing- and communication Protocols", "Firewalls", "Penetration Testing", "Security", "Windows servers (most services)", "Backup", "VPN", "Active Directory", "and a lot more"],
+            "description": [
+                "The first year was called IT-Project and contained of a lot of various courses like Windows OS, Programming (VB), Databases, Hardware and much more. It gave a good fundament for anyone wanting to work as an IT Consultant.",
+                "My last year was named 'Network Administrator', and here we deepdived into Microsoft and Cisco environments. Everything from server administration, to configuration of network components. Cisco CCNA Academy Program was a part of this year."
+            ]
+        },
+        {
+            "school": "Grenade Launcher-Troop at Skjold Garnison, Troms, Norway",
+            "class": "Infantry (Army)",
+            "period": "1999-2000",
+            "url": null,
+            "keywords": null,
+            "description": null
+        },
+        {
+            "school": "Tranberg Vgs, Gjøvik, Norway",
+            "class": "General and Business Studies",
+            "period": "1996-1999",
+            "url": "https://www.gjovik.vgs.no/",
+            "keywords": null,
+            "description": ["With recess in Information Technology, Mathematics (MY), and Business Economics."]
+        }
+    ],
+    "certsandcourses": {
+        "certs": [
+            "UiPath Certified Advanced RPA Developer (2019-2021)",
+            "Microsoft Certified Network Product Specialist (MCNPS)",
+            "Microsoft Certified Product Specialist (MCPS)",
+            "Microsoft Certified Professional (MCP)",
+            "Microsoft Certified System Administrator (MCSA)",
+            "Microsoft Certified System Engineer (MCSE)",
+            "Microsoft Certified Technology Specialist - WSS/Sharepoint 3.0 (MCTS)",
+            "Norman Certified System Engineer",
+            "SafeCom Certified Expert",
+            "PaperCut Tech Certification Lvl.2 (2021)",
+            "Autostore 7 Technical Certification",
+            "eCopy ShareScan Technical Certification",
+            "Toshiba Certified Service Engineer (Network/Multi functional Devices)"
+        ],
+        "courses": [
+            {
+                "title": "Geneology Class at Høgskulen i Volda",
+                "description": "A geneology class I attended at my spare time while I was very interested in this. An important skill was Source criticism, common Archives to search and how to document everything."
+            },
+            {
+                "title": "Theoretical Guard Course (40 hours)",
+                "description": null
+            },
+            {
+                "title": "5060: Implementing Windows Sharepoint Services 3.0",
+                "description": null
+            },
+            {
+                "title": "Microsoft Sharepoint 2007 - Basic and Superuser",
+                "description": null
+            },
+            {
+                "title": "Toshiba (multiple)",
+                "description": "Hardware and software product training, incl. preparation, installation, and integration of Third party products."
+            },
+            {
+                "title": "HP Mono printers",
+                "description": null
+            },
+            {
+                "title": "Kyocera Mita MFD (multi-functional-devices)",
+                "description": null
+            }
+        ]
+    },
+    "awardsandothers": {
+        "other": [
+            {
+                "title": "Edited all video content from our wedding using Adobe Premiere Pro.",
+                "when": "2021",
+                "url": "https://www.youtube.com/watch?v=MgpAvt4v-qs",
+                "urltext": "Video summary:"
+            },
+            {
+                "title": "Attended and completed Hacktoberfest",
+                "when": "2021",
+                "url": null,
+                "urltext": null
+            },
+            {
+                "title": "Held product trainings for endusers and partners.",
+                "when": "2007-2021",
+                "url": null,
+                "urltext": null
+            },
+            {
+                "title": "Responsible, and instructor for an employee with special needs.",
+                "when": "2006-2007",
+                "url": null,
+                "urltext": null
+            },
+            {
+                "title": "Responsible for an Apprentice and his final exam.",
+                "when": "2004",
+                "url": null,
+                "urltext": null
+            },
+            {
+                "title": "Made my first website together with a friend that we got paid for.",
+                "when": "2001",
+                "url": null,
+                "urltext": null
+            },
+            {
+                "title": "Summer Intern at Fladsrud Matsenter A/S (Grocery store)",
+                "when": "2000",
+                "url": null,
+                "urltext": null
+            },
+            {
+                "title": "Arranged (with friends) minor computer-gatherings.",
+                "when": "1997-2002",
+                "url": "https://www.oa.no/nyheter/datagathering-i-bergegarda/s/1-81-177112",
+                "urltext": "Old article:"
+            }
+        ],
+        "awards": [
+            {
+                "title": "Toshiba Customer Support Contest(*) - 3rd. place Europe",
+                "when": "2007"
+            },
+            {
+                "title": "Toshiba Customer Support Contest(*) - National Champion",
+                "when": "2007"
+            },
+            {
+                "title": "Toshiba Customer Support Contest(*) - National Champion",
+                "when": "2005"
+            },
+            {
+                "title": "Talent of the year. Soccer (Søndre Land Idrettslag)",
+                "when": "1997"
+            },
+            {
+                "title": "Best effort award. (Søndre Land Idrettslag)",
+                "when": "1997"
+            }
+        ]
+    },
+    "interests": [
+        {
+            "interest": "Soccer",
+            "description": "I played as an amateur for many years at Søndre Land IL. I have also travelled to UK to watch matches."
+        },
+        {
+            "interest": "Running",
+            "description": "I like to go jogging and have attended several 10km runs and have also completed a half marathon. There is no ambitions besides pushing myself and keeping healthy."
+        },
+        {
+            "interest": "Outdoor Life",
+            "description": "I enjoy fishing, specially trout. And i also like to go hiking and do non-competitive orienteering in the woods."
+        },
+        {
+            "interest": "Music and Movies",
+            "description": "I listen to music all the time, and watch movies every now and then."
+        },
+        {
+            "interest": "Technology",
+            "description": "Testing and learning new things is always fun and interesting."
+        },
+        {
+            "interest": "Geneology",
+            "description": "I keep a record of my ancestors and in periods I continue my work. It`s very time-consuming so it can og a long time between each period I work on it though."
+        },
+        {
+            "interest": "Photography",
+            "description": "I enjoy taking pictures. Not at a professional level, but just for capturing the moment."
+        }
+    ]
+}

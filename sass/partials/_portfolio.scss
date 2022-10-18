@@ -80,9 +80,6 @@
     background-color: $light-blue;
 
     .project {
-        &-mobileonly {
-            //display: none;
-        }
         &-mobileandactiveonly {
             // display: inline-block;
             display: inherit;
@@ -144,11 +141,6 @@
         .project {
             &-desktoponly {
                 display: none;
-                &__row {
-                    &-title {
-                        // text-align: center;
-                    }
-                }
             }
         }
     }

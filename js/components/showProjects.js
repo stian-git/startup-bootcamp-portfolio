@@ -2,7 +2,7 @@ import toggleVisibleProject from "./toggleVisibleProject.js";
 //import { allMagnifyingGlasses } from "./variables.js";
 
 export default function showProjects(arr) {
-    console.log(arr);
+    //console.log(arr);
     const portfolioSection = document.querySelector("#portfolio");
     portfolioSection.innerHTML = "<h1>Portfolio</h1>";
     arr.forEach((project) => {
