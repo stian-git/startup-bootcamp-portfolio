@@ -1,5 +1,15 @@
-export default function toggleVisibleProject() {
-    const projectIndex = this.dataset.projectid;
+export default function toggleVisibleProject(projectIndex) {
+    //console.log(idx);
+    //let projectIndex;
+    //console.log(this.dataset.projectid);
+    //console.log("Index: " + projectIndex);
+    // If index is not a number it`s triggered from an eventlistener:
+    if (isNaN(projectIndex)) {
+        projectIndex = this.dataset.projectid;
+    }
+    //console.log()
+    //console.log(projectIndex);
+    //const projectIndex = this.dataset.projectid;
 
     const currentActiveProject = document.querySelector(".project.active");
 
