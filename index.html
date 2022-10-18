@@ -314,7 +314,7 @@
                         </div>
                     </div>
                     <div class="row g-3 align-items-center contact__row">
-                        <div class="col-md-2 contact__row-labelcontainer">
+                        <div class="col-md-3 contact__row-labelcontainer">
                             <label for="form_name" class="form-label">Name:</label>
                         </div>
                         <div class="col-md-7 col-lg-5 form-floating">
@@ -328,12 +328,13 @@
                         </div>
                     </div>
                     <div class="row g-3 align-items-center contact__row">
-                        <div class="col-md-2 contact__row-labelcontainer">
-                            <label for="form_email" class="form-label">Email: </label>
+                        <div class="col-md-3 contact__row-labelcontainer">
+                            <label for="form_email" class="form-label">Email:</label>
+                            <a href="#" data-bs-toggle="tooltip" data-bs-title="Email is required."><i class="fa-solid fa-circle-info"></i></a>
                         </div>
                         <div class="col-md-7 col-lg-5 form-floating">
                             <input type="email" class="form-control contact__row-input" id="form_email" aria-label="Email" placeholder="Email" />
-                            <label for="form_email" class="contact__row-innerlabel">Email</label>
+                            <label for="form_email" class="contact__row-innerlabel">Email (required)</label>
                         </div>
                     </div>
                     <div class="row g-3 align-items-center contact__row contact__row-requirement contact__row-requirement-subject">
@@ -342,7 +343,7 @@
                         </div>
                     </div>
                     <div class="row g-3 align-items-center contact__row">
-                        <div class="col-md-2 contact__row-labelcontainer">
+                        <div class="col-md-3 contact__row-labelcontainer">
                             <label for="form_subject" class="form-label">Subject:</label>
                         </div>
                         <div class="col-md-7 col-lg-5 form-floating">
@@ -357,13 +358,14 @@
                     </div>
 
                     <div class="row g-3 align-items-center contact__row">
-                        <div class="col-md-2 contact__row-labelcontainer contact__row-labelcontainer-aligntop">
+                        <div class="col-md-3 contact__row-labelcontainer contact__row-labelcontainer-aligntop">
                             <label for="form_message" class="form-label">Message:</label>
+                            <a href="#" data-bs-toggle="tooltip" data-bs-title="Message is required."><i class="fa-solid fa-circle-info"></i></a>
                         </div>
 
                         <div class="col-md-7 col-lg-5 form-floating">
                             <textarea class="form-control contact__row-input contact__row-textarea" id="form_message" placeholder="Message"></textarea>
-                            <label for="form_message" class="contact__row-innerlabel">Message</label>
+                            <label for="form_message" class="contact__row-innerlabel">Message(requried)</label>
                         </div>
                     </div>
                     <div class="row g-3 align-items-center contact__row">
@@ -373,6 +375,10 @@
                     </div>
                 </form>
             </section>
+            <!-- <p class="muted">
+                <a href="#" data-bs-toggle="tooltip" data-bs-title="Field is required."><i class="fa-solid fa-asterisk"></i></a>
+            </p>
+            <a href="#" data-bs-toggle="tooltip" data-bs-title="Field is required."><i class="fa-solid fa-asterisk"></i></a> -->
         </main>
         <footer class="footer">
             <p class="footer__content-text">Stian Martinsen-Stormyr - 2022</p>
