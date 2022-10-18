@@ -1,11 +1,9 @@
-import getProjects from "./components/getProjects.js";
 import isEmailSyntaxValid from "./components/isEmailSyntaxValid.js";
 import minLengthCheck from "./components/minLengthCheck.js";
 import sendContactForm from "./components/sendContactForm.js";
 import showExperience from "./components/showExperience.js";
 import showProjects from "./components/showProjects.js";
 
-//import toggleVisibleProject from "./components/toggleVisibleProject.js";
 import {
     body,
     contactForm,
@@ -71,8 +69,5 @@ formNameField.addEventListener("keyup", () => {
     formRequirementFieldName.classList.add("contact__row-requirement-field-show");
 });
 
-getProjects().then((projectsArr) => {
-    showProjects(projectsArr);
-});
-
+showProjects();
 showExperience();

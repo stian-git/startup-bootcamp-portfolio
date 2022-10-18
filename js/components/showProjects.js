@@ -1,11 +1,13 @@
+import projects from "../data/projects.json" assert { type: "json" };
 import toggleVisibleProject from "./toggleVisibleProject.js";
+
 //import { allMagnifyingGlasses } from "./variables.js";
 
-export default function showProjects(arr) {
+export default function showProjects() {
     //console.log(arr);
     const portfolioSection = document.querySelector("#portfolio");
     portfolioSection.innerHTML = "<h1>Portfolio</h1>";
-    arr.forEach((project) => {
+    projects.forEach((project) => {
         const keywordsString = project.keywords.join(", ") + ".";
         //console.log(keywordsString);
         let highlightsList = "";
