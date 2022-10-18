@@ -9695,6 +9695,9 @@ button:disabled {
   .project.active .project-mobileonly {
     display: none;
   }
+  .project.active .project-mobileandactiveonly {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
   .project {
