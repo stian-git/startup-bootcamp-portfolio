@@ -9821,6 +9821,8 @@ button:disabled {
   display: contents;
 }
 .cvsection__wrapper {
+  display: flex;
+  justify-content: center;
   background-color: #06005c;
   margin: 2em 0;
   border-top: 2px solid white;
@@ -9838,4 +9840,20 @@ button:disabled {
   height: 20px;
   width: 30px;
   margin-left: 1em;
+}
+.cvsection__wrapper-link:hover {
+  color: white;
+  text-decoration: none;
+}
+.cvsection__wrapper-iconwrapper {
+  display: flex;
+  align-self: center;
+  margin-right: 2em;
+}
+.cvsection__wrapper-iconwrapper-pdficon {
+  color: white;
+  font-size: 3.5em;
+}
+.cvsection__wrapper-iconwrapper-pdficon:hover {
+  color: white;
 }

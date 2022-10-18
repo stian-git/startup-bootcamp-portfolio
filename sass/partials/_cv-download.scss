@@ -1,6 +1,8 @@
 .cvsection {
     display: contents;
     &__wrapper {
+        display: flex;
+        justify-content: center;
         background-color: $header-bg;
         margin: 2em 0;
         border-top: 2px solid white;
@@ -16,6 +18,23 @@
                 height: 20px;
                 width: 30px;
                 margin-left: 1em;
+            }
+            &:hover {
+                color: white;
+                text-decoration: none;
+            }
+        }
+        &-iconwrapper {
+            display: flex;
+            align-self: center;
+            margin-right: 2em;
+            &-pdficon {
+                // color: $light-blue;
+                color: white;
+                font-size: 3.5em;
+                &:hover {
+                    color: white;
+                }
             }
         }
     }
