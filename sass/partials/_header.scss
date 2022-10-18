@@ -16,6 +16,7 @@
         }
     }
     &__intro {
+        max-width: -webkit-fill-available;
         &-content {
             background-image: url("../../img/code_bg.png");
             width: 130%;
@@ -28,8 +29,10 @@
             opacity: 15%;
             &-wrapper {
                 position: absolute;
-                height: inherit;
-                width: inherit;
+                // height: inherit;
+                // width: inherit;
+                height: -webkit-fill-available;
+                width: -webkit-fill-available;
                 top: 0;
                 display: flex;
                 align-items: center;
