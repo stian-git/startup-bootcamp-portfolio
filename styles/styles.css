@@ -9832,4 +9832,10 @@ button:disabled {
 }
 .cvsection__wrapper-link {
   display: block;
+  margin-bottom: 1em;
+}
+.cvsection__wrapper-link-flag {
+  height: 20px;
+  width: 30px;
+  margin-left: 1em;
 }
