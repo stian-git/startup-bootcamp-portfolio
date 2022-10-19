@@ -22,8 +22,9 @@
         justify-content: center;
         max-width: fit-content;
         &-content {
-            background-image: url("../../img/code_bg.png");
-            width: 130%;
+            background-image: url("../img/code_bg.png");
+            // width: 130%;
+            width: 100vw;
             height: 130%;
             rotate: 3deg;
             background-size: cover;

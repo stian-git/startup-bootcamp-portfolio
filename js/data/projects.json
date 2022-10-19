@@ -7,13 +7,10 @@
         "keywords": ["Blog", "Headless", "CMS", "Wordpress API"],
         "repositoryUrl": "https://github.com/stian-git/portfolio1/tree/main/projects/cabin-blog",
         "repositoryType": "GitHub",
-        "imageUrl": "/img/blog_desktop+mobile.jpg",
-        "imageThumbUrl": "/img/blog_desktop+mobile_thumb.jpg",
+        "imageUrl": "./img/blog_desktop+mobile.jpg",
+        "imageThumbUrl": "./img/blog_desktop+mobile_thumb.jpg",
         "highlights": ["Wordpress API-Integration", "Blog post Navigation", "Search and filter posts", "Modal to display enlarged media", "Repetitive components added though JS"],
-        "description": [
-            "A blog front-end with content populated from a Wordpress site used as backend CMS. Users can send messages to the blogger which will be stored in Wordpress.",
-            "Visitors can read and comment on blogposts live, and search and filter blogposts to find interesting posts."
-        ]
+        "description": ["A blog front-end with content populated from a Wordpress site used as backend CMS. Users can send messages to the blogger which will be stored in Wordpress.", "Visitors can read and comment on blogposts live, and search and filter blogposts to find interesting posts."]
     },
     {
         "id": 1,
@@ -23,17 +20,9 @@
         "keywords": ["Webshop", "Basket-handling", "Headless CMS", "Wordpress w/WooCommerce API as backend"],
         "repositoryUrl": "https://github.com/stian-git/portfolio1/tree/main/projects/rainy-days",
         "repositoryType": "GitHub",
-        "imageUrl": "/img/rainydays_desktop+mobile.jpg",
-        "imageThumbUrl": "/img/rainydays_desktop+mobile_thumb.jpg",
-        "highlights": [
-            "Wordpress API-Integration",
-            "WooCommerce API",
-            "Place order in backend",
-            "Search and filter Products",
-            "Display multiple product photos from thumbs",
-            "Basket stored in LocalStorage API",
-            "Live Calculations"
-        ],
+        "imageUrl": "./img/rainydays_desktop+mobile.jpg",
+        "imageThumbUrl": "./img/rainydays_desktop+mobile_thumb.jpg",
+        "highlights": ["Wordpress API-Integration", "WooCommerce API", "Place order in backend", "Search and filter Products", "Display multiple product photos from thumbs", "Basket stored in LocalStorage API", "Live Calculations"],
         "description": [
             "A webshop for jackets using a backend made of Wordpress with WooCommerce-integration. All product information are administrated in WooCommerce and retrieved through the REST-Api. The basket are stored in the LocalStorage API, and then sent and saved as an order in WooCommerce when the order has been placed.",
             "The webshop even handles product variations (gender and sizes) for each product, and it also hides options that are not available for the individual products."
@@ -47,8 +36,8 @@
         "keywords": ["Standalone", "Google Map", "JS-Objects", "Timestamp", "Gamification", "QR-Code"],
         "repositoryUrl": "https://github.com/stian-git/portfolio1/tree/main/projects/science-museum",
         "repositoryType": "GitHub",
-        "imageUrl": "/img/sciencemuseum_desktop+mobile.jpg",
-        "imageThumbUrl": "/img/sciencemuseum_desktop+mobile_thumb.jpg",
+        "imageUrl": "./img/sciencemuseum_desktop+mobile.jpg",
+        "imageThumbUrl": "./img/sciencemuseum_desktop+mobile_thumb.jpg",
         "highlights": ["Sorting events", "Date/Time Handling", "Auto-hides past events", "Seat Reservation (no backend though)", "Content from JSON-file"],
         "description": [
             "An informational web page for a science museum. Built to inform potential visitors about the museum, it's exhibitions and special events. An attention grabber designed for kids (Find Eve), encourages the user to search through pages to find Eve. Main goal is to have the user browse more pages than planned.",
@@ -63,8 +52,8 @@
         "keywords": ["Hobby-project", "JS", "reusable components", "rule-building", "error-control", "start-over"],
         "repositoryUrl": "https://github.com/stian-git/sudoku-solver",
         "repositoryType": "GitHub",
-        "imageUrl": "/img/sudoku-screenshot.jpg",
-        "imageThumbUrl": "/img/sudoku-screenshot_thumb.jpg",
+        "imageUrl": "./img/sudoku-screenshot.jpg",
+        "imageThumbUrl": "./img/sudoku-screenshot_thumb.jpg",
         "highlights": ["Use your own game", "Play manually", "Let the game help you", "Error Indication", "Rotate the view"],
         "description": [
             "I started working on this Sudoku-solver during the spring 2022. I wanted to experience how I can translate the way I think while solving a Sudoku into code.",
@@ -80,13 +69,9 @@
         "keywords": ["Hobby-project", "JavaScript", "DeckofCards API", "Async functions"],
         "repositoryUrl": "https://github.com/stian-git/cardtrick",
         "repositoryType": "GitHub",
-        "imageUrl": "/img/cardtrick-screenshots.jpg",
-        "imageThumbUrl": "/img/cardtrick-screenshots-thumb.jpg",
+        "imageUrl": "./img/cardtrick-screenshots.jpg",
+        "imageThumbUrl": "./img/cardtrick-screenshots-thumb.jpg",
         "highlights": ["Magically Reveals your card", "Cards Retrived through API", "Swap cards is possible", "Restart feature available"],
-        "description": [
-            "My first ever JavaScript project, built before I had any Javascript classes.",
-            "This is a classic card trick where you need to remember a card and the game will magically identify it.",
-            "I got inspired to make this by watching a video of someone who demonstrated the use of the DeckofCards API to build a Blackjack-game."
-        ]
+        "description": ["My first ever JavaScript project, built before I had any Javascript classes.", "This is a classic card trick where you need to remember a card and the game will magically identify it.", "I got inspired to make this by watching a video of someone who demonstrated the use of the DeckofCards API to build a Blackjack-game."]
     }
 ]

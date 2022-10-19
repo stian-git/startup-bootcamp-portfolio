@@ -9277,8 +9277,8 @@ button:disabled {
   font-size: 3.5em;
 }
 .header__intro-content {
-  background-image: url("../../img/code_bg.png");
-  width: 130%;
+  background-image: url("../img/code_bg.png");
+  width: 100vw;
   height: 130%;
   rotate: 3deg;
   background-size: cover;

@@ -3,10 +3,10 @@ export default async function getData(dataString) {
     let dataUrl;
     switch (dataString) {
         case "experience":
-            dataUrl = "/js/data/experience.json";
+            dataUrl = "./js/data/experience.json";
             break;
         case "projects":
-            dataUrl = "/js/data/projects.json";
+            dataUrl = "./js/data/projects.json";
             break;
         default:
             break;
