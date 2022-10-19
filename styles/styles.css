@@ -9473,6 +9473,9 @@ button:disabled {
   }
 }
 @media (hover: none) {
+  .keypoints {
+    background-color: red;
+  }
   .keypoints__col-triangle-hovertext {
     opacity: 1;
   }
