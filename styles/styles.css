@@ -9393,9 +9393,6 @@ button:disabled {
   margin: 2em 0 7em 0;
   width: 250px;
 }
-.keypoints__col_item:hover .keypoints__col_item-triangle-hovertext {
-  animation: opacityIncrease 1.5s;
-}
 .keypoints__col_item-triangle {
   display: flex;
   align-items: end;
@@ -9468,8 +9465,11 @@ button:disabled {
   }
 }
 @media (hover) {
-  .keypoints {
-    background-color: red;
+  .keypoints__col_item:hover .keypoints__col_item-triangle-hovertext {
+    animation: opacityIncrease 1.5s;
+  }
+  .keypoints__col-triangle-hovertext {
+    opacity: 0;
   }
 }
 .facts {

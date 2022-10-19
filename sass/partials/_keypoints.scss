@@ -19,12 +19,11 @@
             //background-color: yellow;
             margin: 2em 0 7em 0;
             width: 250px;
-            &:hover {
-                .keypoints__col_item-triangle-hovertext {
-                    //opacity: 1;
-                    animation: opacityIncrease 1.5s;
-                }
-            }
+            // &:hover {
+            //     .keypoints__col_item-triangle-hovertext {
+            //         animation: opacityIncrease 1.5s;
+            //     }
+            // }
             &-triangle {
                 display: flex;
                 align-items: end;
@@ -121,6 +120,21 @@
 
 @media (hover) {
     .keypoints {
-        background-color: red;
+        //background-color: red;
+        &__col {
+            &_item {
+                &:hover {
+                    .keypoints__col_item-triangle-hovertext {
+                        //opacity: 1;
+                        animation: opacityIncrease 1.5s;
+                    }
+                }
+            }
+            &-triangle {
+                &-hovertext {
+                    opacity: 0;
+                }
+            }
+        }
     }
 }
