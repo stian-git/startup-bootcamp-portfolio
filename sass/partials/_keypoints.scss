@@ -141,11 +141,13 @@
 
 @media (hover: none) {
     .keypoints {
-        background-color: red;
+        //background-color: red;
         &__col {
-            &-triangle {
-                &-hovertext {
-                    opacity: 1;
+            &_item {
+                &-triangle {
+                    &-hovertext {
+                        opacity: 1 !important;
+                    }
                 }
             }
         }

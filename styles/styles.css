@@ -9473,11 +9473,8 @@ button:disabled {
   }
 }
 @media (hover: none) {
-  .keypoints {
-    background-color: red;
-  }
-  .keypoints__col-triangle-hovertext {
-    opacity: 1;
+  .keypoints__col_item-triangle-hovertext {
+    opacity: 1 !important;
   }
 }
 .facts {
