@@ -36,3 +36,5 @@ export const interestsTab = document.querySelector("#nav-interests");
 export const modalBody = document.querySelector(".modalcontent__body-message");
 export const modalContent = document.querySelector(".modalcontent");
 export const modalTrigger = document.querySelector(".modal-trigger");
+
+export const portfolioSection = document.querySelector("section.portfolio");

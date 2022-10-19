@@ -1,10 +1,17 @@
+section.portfolio {
+    //margin-top: 24em;
+}
+
 #portfolio {
-    margin-top: 24em;
+    margin-top: 16em;
 }
 @include media-breakpoint-down(sm) {
     #portfolio {
-        margin-top: 30em;
+        margin-top: 20em;
     }
+    // section.portfolio {
+    //     margin-top: 30em;
+    // }
 }
 
 .project {
