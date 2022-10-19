@@ -7,6 +7,9 @@ import {
     formRequirementFieldName,
     formRequirementFieldSubject,
     formSubjectField,
+    modalBody,
+    modalContent,
+    modalTrigger,
     sendContactFormButton,
 } from "./variables.js";
 
@@ -28,8 +31,6 @@ export default function sendContactForm(e) {
         Subject: `Contact: ${contactSubject}`,
         Body: `<h2>Message from: ${contactName} (${contactEmail})</h2><h3>${contactSubject}</h3><p>${contactMessage}</p><p>Sent from Portfolio page.</p>`,
     }).then((message) => {
-        const modalBody = document.querySelector(".modalcontent__body-message");
-        const modalContent = document.querySelector(".modalcontent");
         if (message === "OK") {
             // success
             modalBody.innerHTML = `
@@ -56,7 +57,6 @@ export default function sendContactForm(e) {
             // Enable the button again if the attempt failed:
             sendContactFormButton.disabled = false;
         }
-        const modalTrigger = document.querySelector(".modal-trigger");
         modalTrigger.click();
         sendContactFormButton.innerHTML = "Send";
     });

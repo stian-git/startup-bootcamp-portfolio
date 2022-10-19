@@ -9394,7 +9394,7 @@ button:disabled {
   width: 250px;
 }
 .keypoints__col_item:hover .keypoints__col_item-triangle-hovertext {
-  opacity: 1;
+  animation: opacityIncrease 1.5s;
 }
 .keypoints__col_item-triangle {
   display: flex;
@@ -9423,6 +9423,14 @@ button:disabled {
   align-self: end;
 }
 
+@keyframes opacityIncrease {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media (min-width: 768px) and (max-width: 991.98px) {
   .keypoints__col-imgwrapper-img {
     width: 150%;
@@ -9457,6 +9465,11 @@ button:disabled {
   .keypoints__col {
     width: unset;
     display: block;
+  }
+}
+@media (pointer: none) {
+  .keypoints {
+    background-color: red;
   }
 }
 .facts {
