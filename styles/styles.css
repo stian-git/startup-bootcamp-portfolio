@@ -9949,3 +9949,17 @@ button:disabled {
   color: white;
   font-size: 0.8em;
 }
+
+.imagemodal {
+  background: none;
+}
+.imagemodal__body {
+  padding: 0;
+  align-self: center;
+}
+.imagemodal__body-message-image {
+  border: 4px solid white;
+  border-radius: 10px;
+  max-width: 90vw;
+  max-height: 90vh;
+}

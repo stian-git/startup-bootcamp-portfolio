@@ -421,30 +421,37 @@
         </footer>
         <!-- Hidden modal-trigger -->
         <a class="modal-trigger" href="" data-bs-toggle="modal" data-bs-target="#modal"></a>
+        <a class="imagemodal-trigger" href="" data-bs-toggle="modal" data-bs-target="#imageModal">Image Modal</a>
         <!-- Modal -->
         <div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modallabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content modalcontent">
-                    <!-- <div class="modal-header">
-                        <h5 class="modal-title" id="modallabel">Header</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div> -->
-                    <!-- <div class="modal-body">
-                        <p>This is my message</p>
-                    </div> -->
                     <div class="modal-body modalcontent__body">
-                        <div class="modal-body-message modalcontent__body-message">
-                            <!-- <p class="modalcontent__body-message-error">Wrong username or password. Please try again.</p> -->
-                        </div>
+                        <div class="modal-body-message modalcontent__body-message"></div>
                     </div>
-
                     <div class="modal-footer modalcontent__footer">
                         <button type="button" class="btn btn-light modalcontent__footer-button" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-
+        <!-- Image modal -->
+        <div class="modal fade" id="imageModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="imagemodallabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content imagemodal">
+                    <div class="modal-body imagemodal__body">
+                        <div class="modal-body-message imagemodal__body-message">
+                            <div class="imagemodal__body-message-imagecontainer">
+                                <img src="/img/blog_desktop+mobile.jpg" class="imagemodal__body-message-image" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/script.js" type="module"></script>
         <script src="js/smtp.js"></script>

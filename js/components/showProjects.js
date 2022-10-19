@@ -24,7 +24,7 @@ export default function showProjects(projects) {
                             <div class="project__row-left-top">
                                 <h3 class="project__row-title">${project.type}: ${project.title}</h3>
                                 <div class="project__row-right-bottom project-mobileonly">
-                                    <img src="${project.imageThumbUrl}" class="project__row-image" alt="Screenshot of ${project.title}" title="Screenshot of ${project.title}" aria-label="Screenshot of ${project.title}" />
+                                    <img src="${project.imageThumbUrl}" data-fullsize="${project.imageUrl}" class="project__row-image" alt="Screenshot of ${project.title}" title="Screenshot of ${project.title}" aria-label="Screenshot of ${project.title}" />
                                 </div>
                                 <p class="project__row-header project-desktoponly">Keywords:</p>
                                 <p class="project__row-body project-desktoponly">${keywordsString}</p>
@@ -49,7 +49,7 @@ export default function showProjects(projects) {
                             </ul>
                         </div>
                         <div class="project__row-right-bottom project-desktoponly">
-                            <img src="${project.imageThumbUrl}" class="project__row-image" alt="Screenshot of ${project.title}" title="Screenshot of ${project.title}" aria-label="Screenshot of ${project.title}" />
+                            <img src="${project.imageThumbUrl}" data-fullsize="${project.imageUrl}" class="project__row-image" alt="Screenshot of ${project.title}" title="Screenshot of ${project.title}" aria-label="Screenshot of ${project.title}" />
                         </div>
                     </div>
                     <div class="visibilitytoggler" hidden>
@@ -81,5 +81,16 @@ export default function showProjects(projects) {
     const allMagnifyingGlasses = document.querySelectorAll(".fa-magnifying-glass");
     allMagnifyingGlasses.forEach((icon) => {
         icon.addEventListener("click", toggleVisibleProject);
+    });
+    // Add eventlisteners to images:
+    const allProjectImages = document.querySelectorAll(".project__row-image");
+    const modalImage = document.querySelector(".imagemodal__body-message-image");
+    const imageModalTrigger = document.querySelector(".imagemodal-trigger");
+    allProjectImages.forEach((thumb) => {
+        thumb.addEventListener("click", (e) => {
+            const fullsizeUrl = e.target.dataset.fullsize;
+            modalImage.src = fullsizeUrl;
+            imageModalTrigger.click();
+        });
     });
 }
