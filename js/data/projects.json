@@ -8,7 +8,7 @@
         "repositoryUrl": "https://github.com/stian-git/portfolio1/tree/main/projects/cabin-blog",
         "repositoryType": "GitHub",
         "imageUrl": "/img/blog_desktop+mobile.jpg",
-        "imageThumbUrl": "/img/blog_desktop+mobile.jpg",
+        "imageThumbUrl": "/img/blog_desktop+mobile_thumb.jpg",
         "highlights": ["Wordpress API-Integration", "Blog post Navigation", "Search and filter posts", "Modal to display enlarged media", "Repetitive components added though JS"],
         "description": [
             "A blog front-end with content populated from a Wordpress site used as backend CMS. Users can send messages to the blogger which will be stored in Wordpress.",
@@ -24,7 +24,7 @@
         "repositoryUrl": "https://github.com/stian-git/portfolio1/tree/main/projects/rainy-days",
         "repositoryType": "GitHub",
         "imageUrl": "/img/rainydays_desktop+mobile.jpg",
-        "imageThumbUrl": "/img/rainydays_desktop+mobile.jpg",
+        "imageThumbUrl": "/img/rainydays_desktop+mobile_thumb.jpg",
         "highlights": [
             "Wordpress API-Integration",
             "WooCommerce API",
@@ -48,7 +48,7 @@
         "repositoryUrl": "https://github.com/stian-git/portfolio1/tree/main/projects/science-museum",
         "repositoryType": "GitHub",
         "imageUrl": "/img/sciencemuseum_desktop+mobile.jpg",
-        "imageThumbUrl": "/img/sciencemuseum_desktop+mobile.jpg",
+        "imageThumbUrl": "/img/sciencemuseum_desktop+mobile_thumb.jpg",
         "highlights": ["Sorting events", "Date/Time Handling", "Auto-hides past events", "Seat Reservation (no backend though)", "Content from JSON-file"],
         "description": [
             "An informational web page for a science museum. Built to inform potential visitors about the museum, it's exhibitions and special events. An attention grabber designed for kids (Find Eve), encourages the user to search through pages to find Eve. Main goal is to have the user browse more pages than planned.",

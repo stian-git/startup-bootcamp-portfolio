@@ -2,19 +2,6 @@ export const navbar = document.querySelector(".header__navbar");
 
 export const body = document.querySelector("body");
 
-//export const headerOffsetTop = navbar.offsetTop;
-
-//export const sectionHome = document.querySelector("#home");
-export const sectionAbout = document.querySelector("#about");
-export const sectionPortfolio = document.querySelector("#portfolio");
-export const sectionContact = document.querySelector("#contact");
-
-// export const aboutOffsetTop = sectionAbout.offsetTop;
-// export const portfolioOffsetTop = sectionPortfolio.offsetTop;
-// export const contactOffsetTop = sectionContact.offsetTop;
-
-//export const allMagnifyingGlasses = document.querySelectorAll(".fa-magnifying-glass");
-
 export const sendContactFormButton = document.querySelector(".contact__button-send");
 
 export const contactForm = document.querySelector("form.contact");
