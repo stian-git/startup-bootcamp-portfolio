@@ -13,7 +13,10 @@
         width: 100%;
         left: 0px;
         &-link {
-            display: block;
+            // display: block;
+            align-items: center;
+            display: flex;
+
             margin-bottom: 1em;
             &-flag {
                 height: 20px;
@@ -35,6 +38,20 @@
                 font-size: 3.5em;
                 &:hover {
                     color: white;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .cvsection {
+        &__wrapper {
+            flex-direction: column;
+            &-iconwrapper {
+                display: block;
+                &-pdficon {
+                    height: 30px;
                 }
             }
         }

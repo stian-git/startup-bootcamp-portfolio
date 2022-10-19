@@ -38,3 +38,6 @@ export const modalContent = document.querySelector(".modalcontent");
 export const modalTrigger = document.querySelector(".modal-trigger");
 
 export const portfolioSection = document.querySelector("section.portfolio");
+
+export const navLinks = document.querySelectorAll(".nav-item");
+export const menuToggle = document.querySelector("#navbarSupportedContent");

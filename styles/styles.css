@@ -9878,7 +9878,8 @@ button:disabled {
   left: 0px;
 }
 .cvsection__wrapper-link {
-  display: block;
+  align-items: center;
+  display: flex;
   margin-bottom: 1em;
 }
 .cvsection__wrapper-link-flag {
@@ -9903,6 +9904,17 @@ button:disabled {
   color: white;
 }
 
+@media (max-width: 575.98px) {
+  .cvsection__wrapper {
+    flex-direction: column;
+  }
+  .cvsection__wrapper-iconwrapper {
+    display: block;
+  }
+  .cvsection__wrapper-iconwrapper-pdficon {
+    height: 30px;
+  }
+}
 .modalcontent {
   border: 2px solid white;
   background-color: darkgreen;

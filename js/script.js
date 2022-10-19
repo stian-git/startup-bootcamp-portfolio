@@ -19,7 +19,9 @@ import {
     formRequirementFieldSubject,
     formSubjectField,
     headerOffsetTop,
+    menuToggle,
     minMessageLength,
+    navLinks,
     sendContactFormButton,
 } from "./components/variables.js";
 
@@ -82,3 +84,17 @@ getData("projects").then((data) => {
 // enable tooltips:
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+
+// Closes navbar on click (mobile)
+
+navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        if (document.querySelector(".navbar-collapse.show")) {
+            console.log("This is mobile...collapsing now");
+            //bsCollapse.toggle();
+            menuToggle.classList.remove("show");
+        } else {
+            console.log("This is not mobile...");
+        }
+    });
+});
