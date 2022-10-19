@@ -41,10 +41,10 @@ window.onscroll = (e) => {
     //console.log(aboutOffsetTop);
     //console.log(window.pageYOffset);
 
-    const aboutOffsetTop = sectionAbout.offsetTop;
-    const portfolioOffsetTop = sectionPortfolio.offsetTop;
-    const contactOffsetTop = sectionContact.offsetTop;
-    let scrollLocation = window.pageYOffset;
+    // const aboutOffsetTop = sectionAbout.offsetTop;
+    // const portfolioOffsetTop = sectionPortfolio.offsetTop;
+    // const contactOffsetTop = sectionContact.offsetTop;
+    // let scrollLocation = window.pageYOffset;
 
     //console.log(e);
     // if (scrollLocation < aboutOffsetTop) {

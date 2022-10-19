@@ -44,7 +44,12 @@
             max-height: 30vh;
             max-width: 30vw;
             border-radius: 10px;
-            border: 1px solid black;
+
+            box-shadow: 2px 5px 8px $bg-color;
+            cursor: zoom-in;
+            &:hover {
+                box-shadow: 1px 3px 6px $bg-color;
+            }
         }
         &-right {
             min-width: 40%;

@@ -9664,7 +9664,11 @@ button:disabled {
   max-height: 30vh;
   max-width: 30vw;
   border-radius: 10px;
-  border: 1px solid black;
+  box-shadow: 2px 5px 8px #040044;
+  cursor: zoom-in;
+}
+.project__row-image:hover {
+  box-shadow: 1px 3px 6px #040044;
 }
 .project__row-right {
   min-width: 40%;
