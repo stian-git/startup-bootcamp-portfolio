@@ -1,7 +1,7 @@
-import cv from "../data/experience.json" assert { type: "json" };
+//import cv from "../data/experience.json";
 import { awardsAndOthersAccordion, awardsAndOthersTab, certsAndCoursesAccordion, certsAndCoursesTab, educationAccordion, educationTab, interestsAccordion, interestsTab, workAccordion, workTab } from "./variables.js";
 
-export default function showExperience() {
+export default function showExperience(cv) {
     // WORK
     cv.work.forEach((job) => {
         let jobDescription = "";

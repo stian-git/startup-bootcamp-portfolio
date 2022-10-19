@@ -1,9 +1,10 @@
-import projects from "../data/projects.json" assert { type: "json" };
+//import projects from "../data/projects.json" assert { type: "json" };
 import toggleVisibleProject from "./toggleVisibleProject.js";
+//import { projects } from "./variables.js";
 
 //import { allMagnifyingGlasses } from "./variables.js";
 
-export default function showProjects() {
+export default function showProjects(projects) {
     //console.log(arr);
     const portfolioSection = document.querySelector("#portfolio");
     portfolioSection.innerHTML = "<h1>Portfolio</h1>";

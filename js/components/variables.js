@@ -32,3 +32,5 @@ export const educationTab = document.querySelector("#nav-education");
 export const certsAndCoursesTab = document.querySelector("#nav-certsandcourses");
 export const awardsAndOthersTab = document.querySelector("#nav-awardsandothers");
 export const interestsTab = document.querySelector("#nav-interests");
+// export const cv = require("../data/experience.json");
+// export const projects = require("../data/projects.json");

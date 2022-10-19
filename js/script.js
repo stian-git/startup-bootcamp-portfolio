@@ -1,9 +1,12 @@
+import getData from "./components/getData.js";
 import isEmailSyntaxValid from "./components/isEmailSyntaxValid.js";
 import minLengthCheck from "./components/minLengthCheck.js";
 import sendContactForm from "./components/sendContactForm.js";
 import showExperience from "./components/showExperience.js";
 import showProjects from "./components/showProjects.js";
 
+// import projects from "/js/data/projects.json";
+// import cv from "/js/data/experience.json";
 import {
     body,
     contactForm,
@@ -69,8 +72,16 @@ formNameField.addEventListener("keyup", () => {
     formRequirementFieldName.classList.add("contact__row-requirement-field-show");
 });
 
-showProjects();
-showExperience();
+//showProjects();
+//showExperience();
+
+getData("experience").then((data) => {
+    showExperience(data);
+});
+
+getData("projects").then((data) => {
+    showProjects(data);
+});
 
 // enable tooltips:
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
