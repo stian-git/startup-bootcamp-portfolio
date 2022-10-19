@@ -54,5 +54,39 @@
             "An informational web page for a science museum. Built to inform potential visitors about the museum, it's exhibitions and special events. An attention grabber designed for kids (Find Eve), encourages the user to search through pages to find Eve. Main goal is to have the user browse more pages than planned.",
             "Events are dynamicly displayed. Events older than a week will be hidden, and the rest will be displayed in future and recently past events. There is also a feature to Reserve Seat, which works as intended, but a backend is not implemented so it resets."
         ]
+    },
+    {
+        "id": 3,
+        "title": "Sudoku Solver",
+        "type": "Hobby",
+        "url": "https://delicate-palmier-45a44c.netlify.app/",
+        "keywords": ["Hobby-project", "JS", "reusable components", "rule-building", "error-control", "start-over"],
+        "repositoryUrl": "https://github.com/stian-git/sudoku-solver",
+        "repositoryType": "GitHub",
+        "imageUrl": "/img/sudoku-screenshot.jpg",
+        "imageThumbUrl": "/img/sudoku-screenshot_thumb.jpg",
+        "highlights": ["Use your own game", "Play manually", "Let the game help you", "Error Indication", "Rotate the view"],
+        "description": [
+            "I started working on this Sudoku-solver during the spring 2022. I wanted to experience how I can translate the way I think while solving a Sudoku into code.",
+            "Solving a sudoku is done by using several different methods/rules. My solver got some of these rules implemented, but more rules need to be added to make it complete. The current version can solve most easy and medium leveled Sudokus.",
+            "My plan is also to implement a log showing the last steps, both manual and auto steps, and step back if needed."
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Magic Card Trick",
+        "type": "Hobby",
+        "url": "https://infallible-newton-fee18b.netlify.app/",
+        "keywords": ["Hobby-project", "JavaScript", "DeckofCards API", "Async functions"],
+        "repositoryUrl": "https://github.com/stian-git/cardtrick",
+        "repositoryType": "GitHub",
+        "imageUrl": "/img/cardtrick-screenshots.jpg",
+        "imageThumbUrl": "/img/cardtrick-screenshots-thumb.jpg",
+        "highlights": ["Magically Reveals your card", "Cards Retrived through API", "Swap cards is possible", "Restart feature available"],
+        "description": [
+            "My first ever JavaScript project, built before I had any Javascript classes.",
+            "This is a classic card trick where you need to remember a card and the game will magically identify it.",
+            "I got inspired to make this by watching a video of someone who demonstrated the use of the DeckofCards API to build a Blackjack-game."
+        ]
     }
 ]
