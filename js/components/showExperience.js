@@ -99,7 +99,7 @@ export default function showExperience(cv) {
 
             urlString = `
                 <i class="experience__content-text-link">${urlText}
-                    <a href="${otherexperience.url}" class="experience__content-text-link-address" title="Relevant link for ${otherexperience.title}" aria-label="Relevant link for ${otherexperience.title}">${otherexperience.url}</a>
+                    <a href="${otherexperience.url}" class="experience__content-text-link-address" target="_blank" title="Relevant link for ${otherexperience.title}" aria-label="Relevant link for ${otherexperience.title}">${otherexperience.url}</a>
                 </i>`;
         }
         allOthersHtml += `<p class="experience__content-text-body experience__content-text-body-other">${otherexperience.when}: ${otherexperience.title}</p>${urlString}`;
