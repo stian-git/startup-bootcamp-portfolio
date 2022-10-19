@@ -1,22 +1,18 @@
 .cvsection {
-    // display: contents;
-    //margin-bottom: 2em;
     &__wrapper {
         display: flex;
         justify-content: center;
         background-color: $header-bg;
         margin: 2em 0;
-        border-top: 2px solid white;
-        border-bottom: 2px solid white;
+        border-top: 2px solid $border-light-color;
+        border-bottom: 2px solid $border-light-color;
         padding: 2em;
         position: absolute;
         width: 100%;
         left: 0px;
         &-link {
-            // display: block;
             align-items: center;
             display: flex;
-
             margin-bottom: 1em;
             &-flag {
                 height: 20px;
@@ -24,7 +20,7 @@
                 margin-left: 1em;
             }
             &:hover {
-                color: white;
+                color: $text-light-color;
                 text-decoration: none;
             }
         }
@@ -33,11 +29,10 @@
             align-self: center;
             margin-right: 2em;
             &-pdficon {
-                // color: $light-blue;
-                color: white;
+                color: $text-light-color;
                 font-size: 3.5em;
                 &:hover {
-                    color: white;
+                    color: $text-light-color;
                 }
             }
         }

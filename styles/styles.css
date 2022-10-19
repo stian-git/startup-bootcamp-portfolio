@@ -9184,6 +9184,10 @@ h4,
   color: #fff;
 }
 
+h1, .h1 {
+  margin-top: 3em;
+}
+
 h4, .h4 {
   color: #000;
   font-size: 1.2em;
@@ -9194,10 +9198,6 @@ p {
   color: #fff;
 }
 
-h1, .h1 {
-  margin-top: 3em;
-}
-
 li a.nav-link {
   color: #fff;
 }
@@ -9206,20 +9206,20 @@ li a.nav-link:hover {
 }
 
 li a.nav-link.active {
-  color: white !important;
+  color: #fff !important;
   text-decoration: underline;
-}
-
-.fa-solid {
-  color: white;
-}
-
-.fa-solid:hover {
-  color: #6aabf5;
 }
 
 li {
   line-height: 24px;
+}
+
+.fa-solid {
+  color: #fff;
+}
+
+.fa-solid:hover {
+  color: #6aabf5;
 }
 
 body {
@@ -9258,11 +9258,11 @@ button:disabled {
   background-color: #06005c;
   top: 0;
   width: 100%;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 .header__navbar-brand {
-  color: white;
+  color: #fff;
 }
 .header__navbar-brand:hover {
   color: #6aabf5;
@@ -9301,7 +9301,7 @@ button:disabled {
   max-width: 450px;
 }
 .header__intro-content-wrapper-image {
-  border: 2px solid white;
+  border: 2px solid #fff;
   border-radius: 10px;
   max-width: 40%;
 }
@@ -9326,15 +9326,15 @@ button:disabled {
 .navbar-present .header__navbar {
   position: fixed;
   border-top: none;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   width: 90%;
 }
 
 .navbar-present main {
-  padding-top: 1px;
+  padding-top: 1em;
 }
 
 @media (max-width: 991.98px) {
@@ -9422,11 +9422,12 @@ button:disabled {
   font-weight: bold;
 }
 .keypoints__col_item-triangle-hovertext {
-  color: white;
+  color: #fff;
   opacity: 0;
   position: absolute;
   max-width: 240px;
   text-align: center;
+  margin-top: 5px;
 }
 .keypoints__col_item-left {
   align-self: start;
@@ -9497,7 +9498,7 @@ button:disabled {
   justify-content: space-between;
   margin-bottom: 4em;
   font-size: 12px;
-  color: white;
+  color: #fff;
   margin-top: 4em;
 }
 .facts__col {
@@ -9545,7 +9546,7 @@ button:disabled {
 }
 .experience {
   background-color: #6aabf5;
-  border: 2px solid white;
+  border: 2px solid #fff;
   border-radius: 0.375rem;
 }
 .experience__menu {
@@ -9561,7 +9562,7 @@ button:disabled {
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
   font-family: "Roboto", sans-serif;
-  color: white;
+  color: #fff;
 }
 .experience__menu-col-item.active {
   border-radius: 0 !important;
@@ -9590,11 +9591,11 @@ button:disabled {
   display: block;
 }
 .experience__content-text-link-address {
-  color: black;
+  color: #000;
   line-break: anywhere;
 }
 .experience__content-text-link-address:hover {
-  color: white;
+  color: #fff;
 }
 .experience__content-text-subtitle {
   color: #000;
@@ -9628,11 +9629,6 @@ button:disabled {
     display: none;
   }
 }
-.portfolio {
-  margin-top: 8em;
-  padding-top: 3em;
-}
-
 .project {
   background-color: #08007a;
   border-radius: 15px;
@@ -9659,7 +9655,7 @@ button:disabled {
   font-weight: bold;
 }
 .project__row-listitem {
-  color: white;
+  color: #fff;
 }
 .project__row-image {
   max-height: 30vh;
@@ -9692,7 +9688,7 @@ button:disabled {
   cursor: pointer;
 }
 .project__row-link {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 .project__row-link-text {
@@ -9714,30 +9710,35 @@ button:disabled {
   display: inherit;
 }
 .project.active .project__row-icon {
-  color: black;
+  color: #000;
 }
 .project.active .project__row-icon-magnifier {
   display: none;
 }
 .project.active .project__row-icon:hover {
-  color: white;
+  color: #fff;
 }
 .project.active .project__row-title, .project.active .project__row-header, .project.active .project__row-body, .project.active .project__row-listitem {
-  color: black;
+  color: #000;
 }
 .project.active .project__row-link {
   display: inline-block;
-  color: black;
+  color: #000;
 }
 .project.active .project__row-link-text {
-  color: black;
+  color: #000;
 }
 .project.active .project__row-link-text:hover {
-  color: white;
+  color: #fff;
 }
 .project.active .project__row-link:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
+}
+
+.portfolio {
+  margin-top: 8em;
+  padding-top: 3em;
 }
 
 @media (max-width: 767.98px) {
@@ -9788,7 +9789,7 @@ button:disabled {
 .contact {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: #fff;
 }
 .contact__header {
   margin: 2em;
@@ -9838,7 +9839,7 @@ button:disabled {
   padding: 6px 32px;
 }
 .contact__button-send:hover {
-  background-color: white;
+  background-color: #fff;
 }
 
 @media (max-width: 767.98px) {
@@ -9881,7 +9882,7 @@ button:disabled {
   color: #6aabf5;
 }
 .some__link-icon:hover {
-  color: white;
+  color: #fff;
 }
 
 .accordion-button:not(.collapsed) {
@@ -9898,8 +9899,8 @@ button:disabled {
   justify-content: center;
   background-color: #06005c;
   margin: 2em 0;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   padding: 2em;
   position: absolute;
   width: 100%;
@@ -9916,7 +9917,7 @@ button:disabled {
   margin-left: 1em;
 }
 .cvsection__wrapper-link:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 .cvsection__wrapper-iconwrapper {
@@ -9925,11 +9926,11 @@ button:disabled {
   margin-right: 2em;
 }
 .cvsection__wrapper-iconwrapper-pdficon {
-  color: white;
+  color: #fff;
   font-size: 3.5em;
 }
 .cvsection__wrapper-iconwrapper-pdficon:hover {
-  color: white;
+  color: #fff;
 }
 
 @media (max-width: 575.98px) {
@@ -9944,14 +9945,14 @@ button:disabled {
   }
 }
 .modalcontent {
-  border: 2px solid white;
+  border: 2px solid #fff;
   background-color: darkgreen;
 }
 .modalcontent-error {
   background-color: maroon;
 }
 .modalcontent__body-message-errormessage {
-  color: white;
+  color: #fff;
   font-size: 0.8em;
 }
 
@@ -9963,7 +9964,7 @@ button:disabled {
   align-self: center;
 }
 .imagemodal__body-message-image {
-  border: 4px solid white;
+  border: 4px solid #fff;
   border-radius: 10px;
   max-width: 90vw;
   max-height: 90vh;

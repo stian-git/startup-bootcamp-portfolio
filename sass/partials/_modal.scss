@@ -1,15 +1,14 @@
 // Statusmodal:
-
 .modalcontent {
-    border: 2px solid white;
-    background-color: darkgreen;
+    border: 2px solid $border-light-color;
+    background-color: $successcolor-dark;
     &-error {
-        background-color: maroon;
+        background-color: $errorcolor-dark;
     }
     &__body {
         &-message {
             &-errormessage {
-                color: white;
+                color: $text-light-color;
                 font-size: 0.8em;
             }
         }
@@ -24,7 +23,7 @@
         align-self: center;
         &-message {
             &-image {
-                border: 4px solid white;
+                border: 4px solid $border-light-color;
                 border-radius: 10px;
                 max-width: 90vw;
                 max-height: 90vh;

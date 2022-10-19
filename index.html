@@ -6,7 +6,6 @@
         <meta name="description" content="Portfolio for Stian Martinsen-Stormyr" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://kit.fontawesome.com/c42e915e6a.js" crossorigin="anonymous"></script>
-        <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
         <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
@@ -19,20 +18,10 @@
                 <div class="header__intro-content"></div>
                 <div class="header__intro-content-wrapper">
                     <div>
-                        <!-- <p class="header__intro-content-wrapper-text">I`m a solution oriented</p>
-                        <p class="header__intro-content-wrapper-text">web developer who make</p>
-                        <p class="header__intro-content-wrapper-text">things work.</p> -->
                         <p class="header__intro-content-wrapper-text">I`m a solution oriented web developer who make things work.</p>
                     </div>
-                    <img
-                        src="/img/Stian_homeoffice_2021_IMG_6529_300px_heigth.jpg"
-                        class="header__intro-content-wrapper-image"
-                        alt="Stian at his home office"
-                        title="Stian at his home office"
-                        aria-label="Stian at his home office"
-                    />
+                    <img src="/img/Stian_homeoffice_2021_IMG_6529_300px_heigth.jpg" class="header__intro-content-wrapper-image" alt="Stian at his home office" title="Stian at his home office" aria-label="Stian at his home office" />
                 </div>
-                <!-- Remember to add and test the link below -->
                 <a href="#about" aria-label="Link to content below" title="Link to content below" alt="Link to content below"><i class="fa-solid fa-circle-arrow-down header__intro-arrow"></i></a>
             </div>
             <div class="header__navbar">
@@ -110,7 +99,6 @@
                     </div>
                     <div class="facts__col">
                         <p class="facts__col-header">What motivates me:</p>
-
                         <ul>
                             <li class="facts__col-text">Variations in Projects</li>
                             <li class="facts__col-text">Problem-solving</li>
@@ -156,8 +144,7 @@
                         <p class="facts__col-text"></p>
                     </div>
                 </div>
-
-                <!-- Mobile  Accordion below -->
+                <!-- Mobile Accordion below -->
                 <div class="mobileexperience">
                     <div class="accordion" id="experienceaccordion">
                         <div class="accordion-item">
@@ -166,7 +153,6 @@
                             </h2>
                             <div id="collapseWork" class="accordion-collapse collapse show" aria-labelledby="headingWork" data-bs-parent="#experienceaccordion">
                                 <div class="accordion-body">
-                                    <!-- spinner -->
                                     <div class="d-flex justify-content-center">
                                         <div class="spinner-border" role="status">
                                             <span class="visually-hidden">Loading...</span>
@@ -185,9 +171,7 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingCertsAndCourses">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCertsAndCourses" aria-expanded="false" aria-controls="collapseCertsAndCourses">
-                                    Certifications & Courses
-                                </button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCertsAndCourses" aria-expanded="false" aria-controls="collapseCertsAndCourses">Certifications & Courses</button>
                             </h2>
                             <div id="collapseCertsAndCourses" class="accordion-collapse collapse" aria-labelledby="headingCertsAndCourses" data-bs-parent="#experienceaccordion">
                                 <div class="accordion-body"></div>
@@ -195,9 +179,7 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingAwardsAndOthers">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAwardsAndOthers" aria-expanded="false" aria-controls="collapseAwardsAndOthers">
-                                    Awards & Other Experiences
-                                </button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAwardsAndOthers" aria-expanded="false" aria-controls="collapseAwardsAndOthers">Awards & Other Experiences</button>
                             </h2>
                             <div id="collapseAwardsAndOthers" class="accordion-collapse collapse" aria-labelledby="headingAwardsAndOthers" data-bs-parent="#experienceaccordion">
                                 <div class="accordion-body"></div>
@@ -213,68 +195,20 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Tabs -->
                 <div class="experience">
                     <div class="d-flex align-items-start">
                         <nav class="experience__menu">
                             <div class="nav flex-column nav-tabs experience__menu-col" id="nav-tab" role="tablist">
-                                <button class="nav-link experience__menu-col-item active" id="nav-work-tab" data-bs-toggle="tab" data-bs-target="#nav-work" type="button" role="tab" aria-controls="nav-work" aria-selected="true">
-                                    Work Experience
-                                </button>
-                                <button
-                                    class="nav-link experience__menu-col-item"
-                                    id="nav-education-tab"
-                                    data-bs-toggle="tab"
-                                    data-bs-target="#nav-education"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="nav-education"
-                                    aria-selected="false"
-                                >
-                                    Education
-                                </button>
-                                <button
-                                    class="nav-link experience__menu-col-item"
-                                    id="nav-certsandcourses-tab"
-                                    data-bs-toggle="tab"
-                                    data-bs-target="#nav-certsandcourses"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="nav-certsandcourses"
-                                    aria-selected="false"
-                                >
-                                    Certifications & Courses
-                                </button>
-                                <button
-                                    class="nav-link experience__menu-col-item"
-                                    id="nav-awardsandothers-tab"
-                                    data-bs-toggle="tab"
-                                    data-bs-target="#nav-awardsandothers"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="nav-awardsandothers"
-                                    aria-selected="false"
-                                >
-                                    Awards & Other Experiences
-                                </button>
-                                <button
-                                    class="nav-link experience__menu-col-item"
-                                    id="nav-interests-tab"
-                                    data-bs-toggle="tab"
-                                    data-bs-target="#nav-interests"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="nav-interests"
-                                    aria-selected="false"
-                                >
-                                    Interests
-                                </button>
+                                <button class="nav-link experience__menu-col-item active" id="nav-work-tab" data-bs-toggle="tab" data-bs-target="#nav-work" type="button" role="tab" aria-controls="nav-work" aria-selected="true">Work Experience</button>
+                                <button class="nav-link experience__menu-col-item" id="nav-education-tab" data-bs-toggle="tab" data-bs-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="false">Education</button>
+                                <button class="nav-link experience__menu-col-item" id="nav-certsandcourses-tab" data-bs-toggle="tab" data-bs-target="#nav-certsandcourses" type="button" role="tab" aria-controls="nav-certsandcourses" aria-selected="false">Certifications & Courses</button>
+                                <button class="nav-link experience__menu-col-item" id="nav-awardsandothers-tab" data-bs-toggle="tab" data-bs-target="#nav-awardsandothers" type="button" role="tab" aria-controls="nav-awardsandothers" aria-selected="false">Awards & Other Experiences</button>
+                                <button class="nav-link experience__menu-col-item" id="nav-interests-tab" data-bs-toggle="tab" data-bs-target="#nav-interests" type="button" role="tab" aria-controls="nav-interests" aria-selected="false">Interests</button>
                             </div>
                         </nav>
                         <div class="tab-content experience__content" id="nav-tabContent">
                             <div class="tab-pane experience__content-text fade show active" id="nav-work" role="tabpanel" aria-labelledby="nav-work-tab" tabindex="0">
-                                <!-- spinner -->
                                 <div class="d-flex justify-content-center">
                                     <div class="spinner-border" role="status">
                                         <span class="visually-hidden">Loading...</span>
@@ -291,33 +225,15 @@
                 <section id="cv-download" class="cvsection">
                     <div class="cvsection__wrapper">
                         <div class="cvsection__wrapper-iconwrapper"><i class="fa-solid fa-file-pdf fa-2xl cvsection__wrapper-iconwrapper-pdficon"></i></div>
-
                         <div>
                             <p class="cvsection__wrapper-text">If you are old fashioned or for other reasons need to download my resumè, you will find it here:</p>
-                            <a href="/files/cv/Stian Martinsen - CV - Oktober 2022-English.pdf" title="Download CV for Stian Martinsen" aria-label="Download CV for Stian Martinsen" class="cvsection__wrapper-link"
-                                >Curriculum Vitae for Stian Martinsen-Stormyr<img
-                                    src="https://countryflagsapi.com/png/gb"
-                                    onerror="this.style.display='none'"
-                                    alt="English"
-                                    class="cvsection__wrapper-link-flag"
-                                    title="Flag of Great Britain"
-                            /></a>
-                            <a href="/files/cv/Stian Martinsen - CV - Oktober 2022-Norwegian.pdf" title="Download CV for Stian Martinsen" aria-label="Download CV for Stian Martinsen" class="cvsection__wrapper-link"
-                                >Curriculum Vitae for Stian Martinsen-Stormyr<img
-                                    src="https://countryflagsapi.com/png/no"
-                                    onerror="this.style.display='none'"
-                                    alt="Norwegian"
-                                    class="cvsection__wrapper-link-flag"
-                                    title="Flag of Norway"
-                            /></a>
+                            <a href="/files/cv/Stian Martinsen - CV - Oktober 2022-English.pdf" title="Download CV for Stian Martinsen" aria-label="Download CV for Stian Martinsen" class="cvsection__wrapper-link">Curriculum Vitae for Stian Martinsen-Stormyr<img src="https://countryflagsapi.com/png/gb" onerror="this.style.display='none'" alt="English" class="cvsection__wrapper-link-flag" title="Flag of Great Britain" /></a>
+                            <a href="/files/cv/Stian Martinsen - CV - Oktober 2022-Norwegian.pdf" title="Download CV for Stian Martinsen" aria-label="Download CV for Stian Martinsen" class="cvsection__wrapper-link">Curriculum Vitae for Stian Martinsen-Stormyr<img src="https://countryflagsapi.com/png/no" onerror="this.style.display='none'" alt="Norwegian" class="cvsection__wrapper-link-flag" title="Flag of Norway" /></a>
                         </div>
                     </div>
                 </section>
             </section>
-
             <section id="portfolio">
-                <!-- <p id="portfolioplacer"></p> -->
-                <!-- spinner -->
                 <div class="d-flex justify-content-center">
                     <div class="spinner-border text-light" role="status">
                         <span class="visually-hidden">Loading...</span>
@@ -342,7 +258,6 @@
                         <i class="fa-solid fa-square-envelope fa-2xl some__link-icon"></i>
                     </a>
                 </div>
-                <!-- Add some here -->
                 <p class="contact__header">Or send me a message right now:</p>
                 <form class="contact">
                     <div class="row g-3 align-items-center contact__row contact__row-requirement contact__row-requirement-name">
@@ -395,13 +310,11 @@
                             <p class="contact__row-requirement-field contact__row-requirement-field-message">You need x more characters.</p>
                         </div>
                     </div>
-
                     <div class="row g-3 align-items-center contact__row">
                         <div class="col-md-3 contact__row-labelcontainer contact__row-labelcontainer-aligntop">
                             <label for="form_message" class="form-label">Message:</label>
                             <a href="#" data-bs-toggle="tooltip" data-bs-title="Message is required."><i class="fa-solid fa-circle-info"></i></a>
                         </div>
-
                         <div class="col-md-7 col-lg-5 form-floating">
                             <textarea class="form-control contact__row-input contact__row-textarea" id="form_message" placeholder="Message"></textarea>
                             <label for="form_message" class="contact__row-innerlabel">Message(requried)</label>
@@ -414,18 +327,13 @@
                     </div>
                 </form>
             </section>
-            <!-- <p class="muted">
-                <a href="#" data-bs-toggle="tooltip" data-bs-title="Field is required."><i class="fa-solid fa-asterisk"></i></a>
-            </p>
-            <a href="#" data-bs-toggle="tooltip" data-bs-title="Field is required."><i class="fa-solid fa-asterisk"></i></a> -->
         </main>
         <footer class="footer">
             <p class="footer__content-text">Stian Martinsen-Stormyr - 2022</p>
         </footer>
         <!-- Hidden modal-trigger -->
         <a class="modal-trigger" href="" data-bs-toggle="modal" data-bs-target="#modal"></a>
-
-        <!-- Modal -->
+        <!-- Status Modal -->
         <div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modallabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content modalcontent">

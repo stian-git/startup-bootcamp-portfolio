@@ -1,17 +1,4 @@
-import {
-    formEmailField,
-    formMessageField,
-    formNameField,
-    formRequirementFieldEmail,
-    formRequirementFieldMessage,
-    formRequirementFieldName,
-    formRequirementFieldSubject,
-    formSubjectField,
-    modalBody,
-    modalContent,
-    modalTrigger,
-    sendContactFormButton,
-} from "./variables.js";
+import { formEmailField, formMessageField, formNameField, formRequirementFieldEmail, formRequirementFieldMessage, formRequirementFieldName, formRequirementFieldSubject, formSubjectField, modalBody, modalContent, modalTrigger, sendContactFormButton } from "./variables.js";
 
 export default function sendContactForm(e) {
     e.preventDefault();
@@ -32,7 +19,7 @@ export default function sendContactForm(e) {
         Body: `<h2>Message from: ${contactName} (${contactEmail})</h2><h3>${contactSubject}</h3><p>${contactMessage}</p><p>Sent from Portfolio page.</p>`,
     }).then((message) => {
         if (message === "OK") {
-            // success
+            // on successful
             modalBody.innerHTML = `
             <p class="modalcontent__body-message-line modalcontent__body-message-line-success">Message successfully sent.</p>
             `;
@@ -48,7 +35,7 @@ export default function sendContactForm(e) {
             formRequirementFieldName.classList.remove("contact__row-requirement-field-show");
             formRequirementFieldSubject.classList.remove("contact__row-requirement-field-show");
         } else {
-            // error
+            // on error:
             modalContent.classList.add("modalcontent-error");
             modalBody.innerHTML = `
             <p class="modalcontent__body-message-line modalcontent__body-message-line">Unable to send message. Please try again.</p>

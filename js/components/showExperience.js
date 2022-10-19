@@ -1,9 +1,8 @@
-//import cv from "../data/experience.json";
 import { awardsAndOthersAccordion, awardsAndOthersTab, certsAndCoursesAccordion, certsAndCoursesTab, educationAccordion, educationTab, interestsAccordion, interestsTab, workAccordion, workTab } from "./variables.js";
 
 export default function showExperience(cv) {
     // WORK
-    // Remove spinners first:
+    // Remove spinner first:
     workAccordion.innerHTML = "";
 
     cv.work.forEach((job) => {

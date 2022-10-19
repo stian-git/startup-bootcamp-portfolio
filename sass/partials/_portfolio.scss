@@ -1,28 +1,14 @@
-.portfolio {
-    margin-top: 8em;
-    padding-top: 3em;
-}
-
-// #portfolio {
-//     margin-top: 16em;
-//     //content: " ";
-//     height: 24px;
-// }
-
 .project {
     background-color: $box-dark-bg;
     border-radius: 15px;
     padding: 1em 3em 3em 3em;
     font-size: 12px;
     margin: 4em 0;
-
     &-mobileonly {
         &-left {
             text-align: left;
         }
-        //display: none;
     }
-
     &__row {
         justify-content: space-between;
         display: flex;
@@ -38,13 +24,12 @@
             font-weight: bold;
         }
         &-listitem {
-            color: white;
+            color: $text-light-color;
         }
         &-image {
             max-height: 30vh;
             max-width: 30vw;
             border-radius: 10px;
-
             box-shadow: 2px 5px 8px $bg-color;
             cursor: zoom-in;
             &:hover {
@@ -72,7 +57,7 @@
             }
         }
         &-link {
-            color: white;
+            color: $text-light-color;
             text-decoration: none;
             &-text {
                 display: inline;
@@ -83,51 +68,45 @@
                 }
             }
         }
-
-        // font-size: 1.5em;
     }
     &-mobileandactiveonly {
         display: none;
     }
 }
 
-//title, headers, keywords, ul
 .project.active {
     background-color: $light-blue;
-
     .project {
         &-mobileandactiveonly {
-            // display: inline-block;
             display: inherit;
         }
         &__row {
             &-icon {
-                color: black;
+                color: $text-dark-color;
                 &-magnifier {
                     display: none;
                 }
                 &:hover {
-                    color: white;
+                    color: $button-hover-color;
                 }
             }
             &-title,
             &-header,
             &-body,
             &-listitem {
-                color: black;
+                color: $text-dark-color;
             }
             &-link {
-                // color: $light-blue;
                 display: inline-block;
-                color: black;
+                color: $text-dark-color;
                 &-text {
-                    color: black;
+                    color: $text-dark-color;
                     &:hover {
-                        color: white;
+                        color: $text-light-color;
                     }
                 }
                 &:hover {
-                    color: white;
+                    color: $text-light-color;
                     text-decoration: none;
                 }
             }
@@ -135,15 +114,19 @@
     }
 }
 
+.portfolio {
+    margin-top: 8em;
+    padding-top: 3em;
+}
+
+// smaller screen styling here...
 @include media-breakpoint-down(md) {
-    // small screen styling here...
     .project {
         &-desktoponly {
             display: none;
         }
         &__row {
             &-title {
-                // text-align: center;
                 font-weight: 400;
                 font-size: 3em;
             }
@@ -164,9 +147,6 @@
         margin-top: 10em;
     }
 }
-
-// mobileonly
-// desktoponly
 
 @include media-breakpoint-up(md) {
     .project {
@@ -199,9 +179,6 @@
 }
 
 @include media-breakpoint-down(sm) {
-    // #portfolio {
-    //     margin-top: 20em;
-    // }
     .portfolio {
         margin-top: 15em;
     }

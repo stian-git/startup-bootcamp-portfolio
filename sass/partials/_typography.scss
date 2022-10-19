@@ -1,3 +1,5 @@
+// Some common styling
+
 h1,
 h2,
 h3,
@@ -6,6 +8,9 @@ h4 {
     color: $header-text-color;
 }
 
+h1 {
+    margin-top: 3em;
+}
 h4 {
     color: $text-dark-color;
     font-size: 1.2em;
@@ -16,11 +21,7 @@ p {
     color: $text-light-color;
 }
 
-h1 {
-    margin-top: 3em;
-}
-
-// navigation
+// Navigation
 li a.nav-link {
     color: $text-light-color;
     &:hover {
@@ -28,19 +29,20 @@ li a.nav-link {
     }
 }
 li a.nav-link.active {
-    color: white !important;
+    color: $text-light-color !important;
     text-decoration: underline;
 }
 
+li {
+    line-height: 24px;
+}
+
+// Font-Awesome
+
 .fa-solid {
-    color: white;
+    color: $text-light-color;
 }
 
 .fa-solid:hover {
     color: $light-blue;
-}
-
-// for personal facts, 2nd columnd, but also affects navbar.
-li {
-    line-height: 24px;
 }

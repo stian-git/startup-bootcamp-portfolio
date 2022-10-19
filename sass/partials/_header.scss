@@ -8,10 +8,10 @@
         background-color: $header-bg;
         top: 0;
         width: 100%;
-        border-top: 2px solid white;
-        border-bottom: 2px solid white;
+        border-top: 2px solid $border-light-color;
+        border-bottom: 2px solid $border-light-color;
         &-brand {
-            color: white;
+            color: $navbar-link-color;
             &:hover {
                 color: $light-blue;
             }
@@ -44,7 +44,7 @@
                     max-width: 450px;
                 }
                 &-image {
-                    border: 2px solid white;
+                    border: 2px solid $border-light-color;
                     border-radius: 10px;
                     max-width: 40%;
                 }
@@ -79,16 +79,16 @@
 .navbar-present .header__navbar {
     position: fixed;
     border-top: none;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
+    border-left: 2px solid $border-light-color;
+    border-right: 2px solid $border-light-color;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     width: 90%;
 }
 
-// some adjustment to avoid items become hidden upon toggling.
+// some adjustment to avoid items become hidden upon toggling when scrolling.
 .navbar-present main {
-    padding-top: 1px;
+    padding-top: 1em;
 }
 
 @include media-breakpoint-down(lg) {

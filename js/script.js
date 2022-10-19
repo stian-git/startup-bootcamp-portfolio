@@ -5,23 +5,7 @@ import sendContactForm from "./components/sendContactForm.js";
 import showExperience from "./components/showExperience.js";
 import showProjects from "./components/showProjects.js";
 
-import {
-    body,
-    contactForm,
-    formEmailField,
-    formMessageField,
-    formNameField,
-    formRequirementFieldEmail,
-    formRequirementFieldMessage,
-    formRequirementFieldName,
-    formRequirementFieldSubject,
-    formSubjectField,
-    menuToggle,
-    minMessageLength,
-    navbar,
-    navLinks,
-    sendContactFormButton,
-} from "./components/variables.js";
+import { body, contactForm, formEmailField, formMessageField, formNameField, formRequirementFieldEmail, formRequirementFieldMessage, formRequirementFieldName, formRequirementFieldSubject, formSubjectField, menuToggle, minMessageLength, navbar, navLinks, sendContactFormButton } from "./components/variables.js";
 
 // Adds the sticky-class when the navbar should be locked to the top:
 window.onscroll = (e) => {
@@ -33,6 +17,7 @@ window.onscroll = (e) => {
     }
 };
 
+// Contact form:
 sendContactFormButton.disabled = true;
 sendContactFormButton.addEventListener("click", sendContactForm);
 
@@ -70,6 +55,7 @@ formNameField.addEventListener("keyup", () => {
     formRequirementFieldName.classList.add("contact__row-requirement-field-show");
 });
 
+// Load and display JSON-data
 getData("experience").then((data) => {
     showExperience(data);
 });

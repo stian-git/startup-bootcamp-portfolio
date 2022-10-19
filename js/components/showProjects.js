@@ -82,7 +82,7 @@ export default function showProjects(projects) {
     allMagnifyingGlasses.forEach((icon) => {
         icon.addEventListener("click", toggleVisibleProject);
     });
-    // Add eventlisteners to images:
+    // Add eventlisteners to images for modal toggling:
     const allProjectImages = document.querySelectorAll(".project__row-image");
     const modalImage = document.querySelector(".imagemodal__body-message-image");
     const imageModalTrigger = document.querySelector(".imagemodal-trigger");

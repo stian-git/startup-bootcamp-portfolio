@@ -3,7 +3,6 @@
     &__col {
         width: 30%;
         margin: 0 1em;
-        //background-color: red;
         display: flex;
         flex-direction: column;
         &-imgwrapper {
@@ -11,19 +10,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            &-img {
-                // border: 2px solid black;
-            }
         }
         &_item {
-            //background-color: yellow;
             margin: 2em 0 7em 0;
             width: 250px;
-            // &:hover {
-            //     .keypoints__col_item-triangle-hovertext {
-            //         animation: opacityIncrease 1.5s;
-            //     }
-            // }
             &-triangle {
                 display: flex;
                 align-items: end;
@@ -34,16 +24,15 @@
                 width: 250px;
                 clip-path: polygon(50% 0, 0% 100%, 100% 100%);
                 &-text {
-                    // color: red;
                     font-weight: bold;
                 }
                 &-hovertext {
-                    color: white;
+                    color: $text-light-color;
                     opacity: 0;
-                    //animation: opacityIncrease 1.5s;
                     position: absolute;
                     max-width: 240px;
                     text-align: center;
+                    margin-top: 5px;
                 }
             }
             &-left {
@@ -118,14 +107,13 @@
     }
 }
 
+// Make keypoints text visible on hover using animation.
 @media (hover: hover) {
     .keypoints {
-        //background-color: red;
         &__col {
             &_item {
                 &:hover {
                     .keypoints__col_item-triangle-hovertext {
-                        //opacity: 1;
                         animation: opacityIncrease 1.5s;
                     }
                 }
@@ -139,6 +127,7 @@
     }
 }
 
+// Makes the hovertext permanently visible when hover is unavailable. (mobile)
 @media (hover: none) {
     .keypoints {
         &__col {

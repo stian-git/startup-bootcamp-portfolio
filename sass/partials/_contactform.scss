@@ -1,7 +1,7 @@
 .contact {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: $text-light-color;
     &__header {
         margin: 2em;
     }
@@ -16,7 +16,6 @@
         &-innerlabel {
             color: black;
             font-style: italic;
-            // display: none;
         }
         &-textarea {
             height: 130px !important;
@@ -53,7 +52,7 @@
             font-weight: bold;
             padding: 6px 32px;
             &:hover {
-                background-color: white;
+                background-color: $button-hover-color;
             }
         }
     }
