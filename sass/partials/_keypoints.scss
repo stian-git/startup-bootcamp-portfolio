@@ -118,7 +118,7 @@
     }
 }
 
-@media (hover) {
+@media (hover: hover) {
     .keypoints {
         //background-color: red;
         &__col {
@@ -133,6 +133,18 @@
             &-triangle {
                 &-hovertext {
                     opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (hover: none) {
+    .keypoints {
+        &__col {
+            &-triangle {
+                &-hovertext {
+                    opacity: 1;
                 }
             }
         }

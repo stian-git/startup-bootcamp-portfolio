@@ -9464,12 +9464,17 @@ button:disabled {
     display: block;
   }
 }
-@media (hover) {
+@media (hover: hover) {
   .keypoints__col_item:hover .keypoints__col_item-triangle-hovertext {
     animation: opacityIncrease 1.5s;
   }
   .keypoints__col-triangle-hovertext {
     opacity: 0;
+  }
+}
+@media (hover: none) {
+  .keypoints__col-triangle-hovertext {
+    opacity: 1;
   }
 }
 .facts {
