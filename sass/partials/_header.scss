@@ -20,7 +20,7 @@
     &__intro {
         display: flex;
         justify-content: center;
-
+        max-width: fit-content;
         &-content {
             background-image: url("../../img/code_bg.png");
             width: 130%;

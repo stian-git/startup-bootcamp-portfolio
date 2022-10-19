@@ -9270,6 +9270,7 @@ button:disabled {
 .header__intro {
   display: flex;
   justify-content: center;
+  max-width: fit-content;
   overflow: hidden;
   height: 100vh;
   width: 98vw;
