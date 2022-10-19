@@ -73,7 +73,7 @@ export default function showExperience(cv) {
             desc = `<p class="experience__content-text-body">${course.description}</p>`;
         }
         courses += `
-            <h3 class="experience__content-text-subtitle">${course.title}</h3>
+            <h4 class="experience__content-text-courseheader">${course.title}</h4>
             ${desc}`;
     });
     certsAndCoursesAccordion.innerHTML += `
@@ -102,7 +102,7 @@ export default function showExperience(cv) {
                     <a href="${otherexperience.url}" class="experience__content-text-link-address" title="Relevant link for ${otherexperience.title}" aria-label="Relevant link for ${otherexperience.title}">${otherexperience.url}</a>
                 </i>`;
         }
-        allOthersHtml += `<p class="experience__content-text-body">${otherexperience.when}: ${otherexperience.title}</p>${urlString}`;
+        allOthersHtml += `<p class="experience__content-text-body experience__content-text-body-other">${otherexperience.when}: ${otherexperience.title}</p>${urlString}`;
     });
     let allAwardsHtml = "";
     cv.awardsandothers.awards.forEach((award) => {
@@ -124,8 +124,8 @@ export default function showExperience(cv) {
     let interestsHtml = "";
     cv.interests.forEach((interest) => {
         interestsHtml += `
-        <h3 class="experience__content-text-subtitle">${interest.interest}</h3>
-        <p class="experience__content-text-body">${interest.description}</p>`;
+        <h4 class="experience__content-text-hobbyheader">${interest.interest}</h4>
+        <p class="experience__content-text-body experience__content-text-body-hobby">${interest.description}</p>`;
     });
     interestsAccordion.innerHTML = `
     <div class="experience__content-text-wrapper">

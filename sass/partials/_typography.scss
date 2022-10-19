@@ -1,8 +1,15 @@
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: $font-headers;
     color: $header-text-color;
+}
+
+h4 {
+    color: $text-dark-color;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 p {
