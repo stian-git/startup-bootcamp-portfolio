@@ -417,6 +417,32 @@
         <footer class="footer">
             <p class="footer__content-text">Stian Martinsen-Stormyr - 2022</p>
         </footer>
+        <!-- Hidden modal-trigger -->
+        <a class="modal-trigger" href="" data-bs-toggle="modal" data-bs-target="#modal">Modal Trigger</a>
+        <!-- Modal -->
+        <div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modallabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modalcontent">
+                    <!-- <div class="modal-header">
+                        <h5 class="modal-title" id="modallabel">Header</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div> -->
+                    <!-- <div class="modal-body">
+                        <p>This is my message</p>
+                    </div> -->
+                    <div class="modal-body modalcontent__body">
+                        <div class="modal-body-message modalcontent__body-message">
+                            <p class="modalcontent__body-message-error">Wrong username or password. Please try again.</p>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer modalcontent__footer">
+                        <button type="button" class="btn btn-secondary modalcontent__footer-button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/script.js" type="module"></script>
         <script src="js/smtp.js"></script>

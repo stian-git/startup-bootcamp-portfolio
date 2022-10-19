@@ -49,7 +49,6 @@ contactForm.addEventListener("keyup", (e) => {
 
 formMessageField.addEventListener("keyup", () => {
     const charsLeft = minMessageLength - formMessageField.value.trim().length;
-    console.log("Chars Left: " + charsLeft);
     if (charsLeft > 0) {
         // show message
         formRequirementFieldMessage.innerHTML = `You need ${charsLeft} more characters.`;
@@ -71,9 +70,6 @@ formSubjectField.addEventListener("keyup", () => {
 formNameField.addEventListener("keyup", () => {
     formRequirementFieldName.classList.add("contact__row-requirement-field-show");
 });
-
-//showProjects();
-//showExperience();
 
 getData("experience").then((data) => {
     showExperience(data);
