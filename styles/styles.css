@@ -9606,6 +9606,7 @@ button:disabled {
 }
 #portfolio {
   margin-top: 16em;
+  height: 24px;
 }
 
 @media (max-width: 575.98px) {

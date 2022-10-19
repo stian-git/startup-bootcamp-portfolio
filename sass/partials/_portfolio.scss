@@ -4,6 +4,8 @@ section.portfolio {
 
 #portfolio {
     margin-top: 16em;
+    //content: " ";
+    height: 24px;
 }
 @include media-breakpoint-down(sm) {
     #portfolio {
