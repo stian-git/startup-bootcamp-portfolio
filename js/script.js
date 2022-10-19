@@ -18,24 +18,56 @@ import {
     formRequirementFieldName,
     formRequirementFieldSubject,
     formSubjectField,
-    headerOffsetTop,
     menuToggle,
     minMessageLength,
+    navbar,
     navLinks,
+    sectionAbout,
+    sectionContact,
+    sectionPortfolio,
     sendContactFormButton,
 } from "./components/variables.js";
 
 // Adds the sticky-class when the navbar should be locked to the top:
-window.onscroll = () => {
+window.onscroll = (e) => {
+    // Make the navbar stick...
+    const headerOffsetTop = navbar.offsetTop;
+
     if (window.pageYOffset > headerOffsetTop) {
-        //header.classList.add("sticky");
         body.classList.add("navbar-present");
     } else {
-        //header.classList.remove("sticky");
         body.classList.remove("navbar-present");
     }
+    //console.log(aboutOffsetTop);
+    //console.log(window.pageYOffset);
+
+    const aboutOffsetTop = sectionAbout.offsetTop;
+    const portfolioOffsetTop = sectionPortfolio.offsetTop;
+    const contactOffsetTop = sectionContact.offsetTop;
+    let scrollLocation = window.pageYOffset;
+
+    //console.log(e);
+    // if (scrollLocation < aboutOffsetTop) {
+    //     console.log("Home...");
+    // }
+    // if (scrollLocation >= aboutOffsetTop && scrollLocation < sectionAbout.offsetHeight - 200) {
+    //     console.log("About...");
+    //     //remove previous
+    //     // add this
+    // }
+    // if (scrollLocation >= portfolioOffsetTop && scrollLocation < sectionPortfolio.offsetHeight) {
+    //     console.log("Portfolio...");
+    //     //remove previous
+    //     // add this
+    // }
+    // if (scrollLocation > contactOffsetTop) {
+    //     console.log("Contact...");
+    //     //remove previous
+    //     // add this
+    // }
 };
 
+// console.log("Middle: " + Math());
 sendContactFormButton.disabled = true;
 sendContactFormButton.addEventListener("click", sendContactForm);
 
@@ -93,8 +125,6 @@ navLinks.forEach((link) => {
             console.log("This is mobile...collapsing now");
             //bsCollapse.toggle();
             menuToggle.classList.remove("show");
-        } else {
-            console.log("This is not mobile...");
         }
     });
 });

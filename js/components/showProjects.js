@@ -1,23 +1,14 @@
-//import projects from "../data/projects.json" assert { type: "json" };
 import toggleVisibleProject from "./toggleVisibleProject.js";
 import { portfolioSection } from "./variables.js";
-//import { projects } from "./variables.js";
-
-//import { allMagnifyingGlasses } from "./variables.js";
 
 export default function showProjects(projects) {
-    //console.log(arr);
-    //const portfolioSection = document.querySelector("section.portfolio");
-
-    portfolioSection.innerHTML = `<h1>Portfolio</h1>`;
+    portfolioSection.innerHTML = `<h1 class="portfolio">Portfolio</h1>`;
     projects.forEach((project) => {
         const keywordsString = project.keywords.join(", ") + ".";
-        //console.log(keywordsString);
         let highlightsList = "";
         project.highlights.forEach((highlight) => {
             highlightsList += `<li class="project__row-listitem">${highlight}</li>`;
         });
-        //console.log(highlightsList);
         let description = "";
         project.description.forEach((line) => {
             description += `<p class="project__row-body">${line}</p>`;
@@ -26,7 +17,6 @@ export default function showProjects(projects) {
         if (project.repositoryType.toLowerCase() === "github") {
             repoIconClasses = "fa-brands fa-github";
         }
-        //console.log(description);
         portfolioSection.innerHTML += `
         <div class="project">
                     <div class="project__row">
@@ -93,7 +83,3 @@ export default function showProjects(projects) {
         icon.addEventListener("click", toggleVisibleProject);
     });
 }
-
-// add eventlisteners:
-// magnifying glass (2x?)
-// open in own window (2x?)

@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="styles/styles.css" />
         <title>Stian Martinsen-Stormyr | Portfolio</title>
     </head>
-    <body>
+    <body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent">
         <header class="header" id="home">
             <div class="header__intro">
                 <div class="header__intro-content"></div>
@@ -285,34 +285,35 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="cv-download" class="cvsection">
-                <div class="cvsection__wrapper">
-                    <div class="cvsection__wrapper-iconwrapper"><i class="fa-solid fa-file-pdf fa-2xl cvsection__wrapper-iconwrapper-pdficon"></i></div>
+                <section id="cv-download" class="cvsection">
+                    <div class="cvsection__wrapper">
+                        <div class="cvsection__wrapper-iconwrapper"><i class="fa-solid fa-file-pdf fa-2xl cvsection__wrapper-iconwrapper-pdficon"></i></div>
 
-                    <div>
-                        <p class="cvsection__wrapper-text">If you are old fashioned or for other reasons need to download my resumè, you will find it here:</p>
-                        <a href="/files/cv/Stian Martinsen - CV - Oktober 2022-English.pdf" title="Download CV for Stian Martinsen" aria-label="Download CV for Stian Martinsen" class="cvsection__wrapper-link"
-                            >Curriculum Vitae for Stian Martinsen-Stormyr<img
-                                src="https://countryflagsapi.com/png/gb"
-                                onerror="this.style.display='none'"
-                                alt="English"
-                                class="cvsection__wrapper-link-flag"
-                                title="Flag of Great Britain"
-                        /></a>
-                        <a href="/files/cv/Stian Martinsen - CV - Oktober 2022-Norwegian.pdf" title="Download CV for Stian Martinsen" aria-label="Download CV for Stian Martinsen" class="cvsection__wrapper-link"
-                            >Curriculum Vitae for Stian Martinsen-Stormyr<img
-                                src="https://countryflagsapi.com/png/no"
-                                onerror="this.style.display='none'"
-                                alt="Norwegian"
-                                class="cvsection__wrapper-link-flag"
-                                title="Flag of Norway"
-                        /></a>
+                        <div>
+                            <p class="cvsection__wrapper-text">If you are old fashioned or for other reasons need to download my resumè, you will find it here:</p>
+                            <a href="/files/cv/Stian Martinsen - CV - Oktober 2022-English.pdf" title="Download CV for Stian Martinsen" aria-label="Download CV for Stian Martinsen" class="cvsection__wrapper-link"
+                                >Curriculum Vitae for Stian Martinsen-Stormyr<img
+                                    src="https://countryflagsapi.com/png/gb"
+                                    onerror="this.style.display='none'"
+                                    alt="English"
+                                    class="cvsection__wrapper-link-flag"
+                                    title="Flag of Great Britain"
+                            /></a>
+                            <a href="/files/cv/Stian Martinsen - CV - Oktober 2022-Norwegian.pdf" title="Download CV for Stian Martinsen" aria-label="Download CV for Stian Martinsen" class="cvsection__wrapper-link"
+                                >Curriculum Vitae for Stian Martinsen-Stormyr<img
+                                    src="https://countryflagsapi.com/png/no"
+                                    onerror="this.style.display='none'"
+                                    alt="Norwegian"
+                                    class="cvsection__wrapper-link-flag"
+                                    title="Flag of Norway"
+                            /></a>
+                        </div>
                     </div>
-                </div>
+                </section>
             </section>
-            <p id="portfolio"></p>
-            <section class="portfolio">
+
+            <section id="portfolio">
+                <!-- <p id="portfolioplacer"></p> -->
                 <!-- spinner -->
                 <div class="d-flex justify-content-center">
                     <div class="spinner-border text-light" role="status">

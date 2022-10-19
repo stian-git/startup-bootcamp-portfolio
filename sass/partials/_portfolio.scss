@@ -1,20 +1,13 @@
-section.portfolio {
-    //margin-top: 24em;
+.portfolio {
+    margin-top: 8em;
+    padding-top: 3em;
 }
 
-#portfolio {
-    margin-top: 16em;
-    //content: " ";
-    height: 24px;
-}
-@include media-breakpoint-down(sm) {
-    #portfolio {
-        margin-top: 20em;
-    }
-    // section.portfolio {
-    //     margin-top: 30em;
-    // }
-}
+// #portfolio {
+//     margin-top: 16em;
+//     //content: " ";
+//     height: 24px;
+// }
 
 .project {
     background-color: $box-dark-bg;
@@ -162,6 +155,9 @@ section.portfolio {
             }
         }
     }
+    .portfolio {
+        margin-top: 10em;
+    }
 }
 
 // mobileonly
@@ -194,5 +190,14 @@ section.portfolio {
 @include media-breakpoint-up(xxl) {
     .project {
         padding: 1em 15em 3em 15em;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    // #portfolio {
+    //     margin-top: 20em;
+    // }
+    .portfolio {
+        margin-top: 15em;
     }
 }

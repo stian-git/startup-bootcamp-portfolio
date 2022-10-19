@@ -9256,6 +9256,9 @@ button:disabled {
 .header__navbar-brand {
   color: white;
 }
+.header__navbar-brand:hover {
+  color: #6aabf5;
+}
 .header__intro {
   max-width: -webkit-fill-available;
   overflow: hidden;
@@ -9604,16 +9607,11 @@ button:disabled {
     display: none;
   }
 }
-#portfolio {
-  margin-top: 16em;
-  height: 24px;
+.portfolio {
+  margin-top: 8em;
+  padding-top: 3em;
 }
 
-@media (max-width: 575.98px) {
-  #portfolio {
-    margin-top: 20em;
-  }
-}
 .project {
   background-color: #08007a;
   border-radius: 15px;
@@ -9732,6 +9730,9 @@ button:disabled {
   .project.active .project-desktoponly {
     display: none;
   }
+  .portfolio {
+    margin-top: 10em;
+  }
 }
 @media (min-width: 768px) {
   .project-mobileonly {
@@ -9752,6 +9753,11 @@ button:disabled {
 @media (min-width: 1400px) {
   .project {
     padding: 1em 15em 3em 15em;
+  }
+}
+@media (max-width: 575.98px) {
+  .portfolio {
+    margin-top: 15em;
   }
 }
 .contact {
@@ -9861,9 +9867,6 @@ button:disabled {
   .mobileexperience {
     display: none;
   }
-}
-.cvsection {
-  display: contents;
 }
 .cvsection__wrapper {
   display: flex;

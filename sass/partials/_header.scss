@@ -13,6 +13,9 @@
         border-bottom: 2px solid white;
         &-brand {
             color: white;
+            &:hover {
+                color: $light-blue;
+            }
         }
     }
     &__intro {
