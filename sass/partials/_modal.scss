@@ -1,13 +1,14 @@
 .modalcontent {
-    //background-color: black;
-    border: 4px solid red;
+    border: 2px solid white;
+    background-color: darkgreen;
+    &-error {
+        background-color: maroon;
+    }
     &__body {
         &-message {
-            &-success {
-                color: black;
-            }
-            &-error {
-                color: red;
+            &-errormessage {
+                color: white;
+                font-size: 0.8em;
             }
         }
     }

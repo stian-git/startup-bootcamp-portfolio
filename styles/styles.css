@@ -9882,11 +9882,13 @@ button:disabled {
 }
 
 .modalcontent {
-  border: 4px solid red;
+  border: 2px solid white;
+  background-color: darkgreen;
 }
-.modalcontent__body-message-success {
-  color: black;
+.modalcontent-error {
+  background-color: maroon;
 }
-.modalcontent__body-message-error {
-  color: red;
+.modalcontent__body-message-errormessage {
+  color: white;
+  font-size: 0.8em;
 }

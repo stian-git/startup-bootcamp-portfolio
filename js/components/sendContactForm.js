@@ -1,7 +1,22 @@
-import { formEmailField, formMessageField, formNameField, formSubjectField } from "./variables.js";
+import {
+    formEmailField,
+    formMessageField,
+    formNameField,
+    formRequirementFieldEmail,
+    formRequirementFieldMessage,
+    formRequirementFieldName,
+    formRequirementFieldSubject,
+    formSubjectField,
+    sendContactFormButton,
+} from "./variables.js";
 
 export default function sendContactForm(e) {
     e.preventDefault();
+    // disable the sendbutton to avoid duplicates:
+    sendContactFormButton.disabled = true;
+    // add spinner to button:
+    sendContactFormButton.innerHTML = `<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+    Sending...`;
     const contactEmail = formEmailField.value;
     const contactName = formNameField.value;
     const contactSubject = formSubjectField.value;
@@ -13,32 +28,36 @@ export default function sendContactForm(e) {
         Subject: `Contact: ${contactSubject}`,
         Body: `<h2>Message from: ${contactName} (${contactEmail})</h2><h3>${contactSubject}</h3><p>${contactMessage}</p><p>Sent from Portfolio page.</p>`,
     }).then((message) => {
-        //alert(message);
-        //console.log(message);
         const modalBody = document.querySelector(".modalcontent__body-message");
+        const modalContent = document.querySelector(".modalcontent");
         if (message === "OK") {
             // success
             modalBody.innerHTML = `
             <p class="modalcontent__body-message-line modalcontent__body-message-line-success">Message successfully sent.</p>
             `;
-            console.log("Alles in ordnung");
-            // clear inputs?
+            modalContent.classList.remove("modalcontent-error");
+            // clear inputs:
             formEmailField.value = "";
             formNameField.value = "";
             formSubjectField.value = "";
             formMessageField.value = "";
+            // clear requirement-icons:
+            formRequirementFieldEmail.classList.remove("contact__row-requirement-field-show");
+            formRequirementFieldMessage.classList.remove("contact__row-requirement-field-show");
+            formRequirementFieldName.classList.remove("contact__row-requirement-field-show");
+            formRequirementFieldSubject.classList.remove("contact__row-requirement-field-show");
         } else {
             // error
-            console.log("Sending failed");
-            console.log(message);
+            modalContent.classList.add("modalcontent-error");
             modalBody.innerHTML = `
-            <p class="modalcontent__body-message-line modalcontent__body-message-line-error">Unable to send message. Please try again.</p>
-            <p class="modalcontent__body-message-line modalcontent__body-message-line-error">Error: ${message}</p>
+            <p class="modalcontent__body-message-line modalcontent__body-message-line">Unable to send message. Please try again.</p>
+            <i class="modalcontent__body-message-line modalcontent__body-message-errormessage">Error: ${message}</i>
             `;
-            // message = error details
+            // Enable the button again if the attempt failed:
+            sendContactFormButton.disabled = false;
         }
         const modalTrigger = document.querySelector(".modal-trigger");
         modalTrigger.click();
+        sendContactFormButton.innerHTML = "Send";
     });
-    // Add a modal to display message.
 }
