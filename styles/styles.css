@@ -9268,7 +9268,8 @@ button:disabled {
   color: #6aabf5;
 }
 .header__intro {
-  max-width: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   height: 100vh;
   width: 98vw;
@@ -9287,8 +9288,7 @@ button:disabled {
 }
 .header__intro-content-wrapper {
   position: absolute;
-  height: -webkit-fill-available;
-  width: -webkit-fill-available;
+  height: 100vh;
   top: 0;
   display: flex;
   align-items: center;
