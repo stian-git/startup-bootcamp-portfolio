@@ -3,6 +3,9 @@ import { awardsAndOthersAccordion, awardsAndOthersTab, certsAndCoursesAccordion,
 
 export default function showExperience(cv) {
     // WORK
+    // Remove spinners first:
+    workAccordion.innerHTML = "";
+
     cv.work.forEach((job) => {
         let jobDescription = "";
         job.description.forEach((line) => {
