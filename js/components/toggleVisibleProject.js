@@ -3,6 +3,7 @@ export default function toggleVisibleProject(projectIndex) {
     // If index is not a number it`s triggered from an eventlistener:
     if (isNaN(projectIndex)) {
         projectIndex = this.dataset.projectindex;
+        //  = projectIndex.target.dataset.projectid
         console.log(projectIndex);
     }
     // Identify the current active project

@@ -66,7 +66,7 @@ export default function showProjects(projects) {
                     <div class="project__row-right project-mobileonly">
                         <div class="project__row-right-top">
                             <p class="project__row-header project-mobileonly project-mobileonly-left">Actions:</p>
-                            <i class="fa-solid fa-magnifying-glass fa-2xl project__row-icon project__row-icon-magnifier project__row-icon-mobile" data-projectid="${project.id}"></i>
+                            <i class="fa-solid fa-magnifying-glass fa-2xl project__row-icon project__row-icon-magnifier project__row-icon-mobile" data-projectid="${project.id}" data-projectindex="${projectindex}"></i>
                             <a href="${project.url}" target="_blank" title="Link to ${project.title}" aria-label="Link to ${project.title}"><i class="fa-solid fa-share-from-square fa-2xl project__row-icon project__row-icon-mobile"></i></a>
                         </div>
                     </div>
