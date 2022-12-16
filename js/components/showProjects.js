@@ -3,7 +3,7 @@ import { portfolioSection } from "./variables.js";
 
 export default function showProjects(projects) {
     portfolioSection.innerHTML = `<h1 class="portfolio">Portfolio</h1>`;
-    projects.forEach((project) => {
+    projects.forEach((project, projectindex) => {
         const keywordsString = project.keywords.join(", ") + ".";
         let highlightsList = "";
         project.highlights.forEach((highlight) => {
@@ -37,7 +37,7 @@ export default function showProjects(projects) {
                         </div>
                         <div class="project__row-right project-desktoponly">
                             <div class="project__row-right-top">
-                                <i class="fa-solid fa-magnifying-glass fa-2xl project__row-icon project__row-icon-magnifier" data-projectid="${project.id}"></i><a href="${project.url}" target="_blank" title="Link to ${project.title}" aria-label="Link to ${project.title}"><i class="fa-solid fa-share-from-square fa-2xl project__row-icon"></i></a>
+                                <i class="fa-solid fa-magnifying-glass fa-2xl project__row-icon project__row-icon-magnifier" data-projectid="${project.id}" data-projectindex="${projectindex}"></i><a href="${project.url}" target="_blank" title="Link to ${project.title}" aria-label="Link to ${project.title}"><i class="fa-solid fa-share-from-square fa-2xl project__row-icon"></i></a>
                             </div>
                         </div>
                     </div>
