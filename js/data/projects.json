@@ -1,6 +1,24 @@
 [
   {
-    "id": 95,
+    "id": 100,
+    "title": "GameZ",
+    "type": "Game Archive",
+    "url": "https://gorgeous-fenglisu-322c14.netlify.app/",
+    "keywords": ["React", "Rest-API", "Authentication", "Favourites", "Sass", "Bootstrap"],
+    "repositoryUrl": "https://github.com/stian-git/js-framework-ca",
+    "repositoryType": "GitHub",
+    "imageUrl": "./img/gamez-screenshot.jpg",
+    "imageThumbUrl": "./img/gamez-screenshot_thumb.jpg",
+    "highlights": ["React as Framework", "Bootstrap and Sass for styling", "User Authentication", "Game-Content retrieved from Rest-API", "Mark and save your favourites", "Contact Schema uses SmtpJS", "User and favourites stored in LocalStorage API"],
+    "description": [
+      "I used React to build this site and introduced the use of components like hooks, context, and states.",
+      "As backend I use a Wordpress-installation as user database, and the games data are fetched from Rawg.io.Localstorage is used to save logged in user, and game favourites.",
+      "The login do only provide access to an admin page, but there are no additional features implemented.Contactform uses a third party component from SmtpJS. Forms are built using React-hook-form, and Yup.",
+      "You can login using credentials: testuser/Password123!"
+    ]
+  },
+  {
+    "id": 105,
     "title": "Comment-plugin for TNG",
     "type": "Integration",
     "url": "https://www.tekniskpotet.no/slekta/",
@@ -17,25 +35,6 @@
       "My plugin modifies the PHP in the backend and injects a Javascript-file that handles the comment-feature.",
       "With this plugin visitors can use their existing FaceBook/Google/Twitter-account to comment on every people and/or media added to the TNG site, and they can interact with eachother.",
       "Without this plugin visitors would have to register as a local TNG-user and write to the administrator only, which only the most interested people would concider to do"
-    ]
-  },
-
-  {
-    "id": 100,
-    "title": "GameZ",
-    "type": "Game Archive",
-    "url": "https://gorgeous-fenglisu-322c14.netlify.app/",
-    "keywords": ["React", "Rest-API", "Authentication", "Favourites", "Sass", "Bootstrap"],
-    "repositoryUrl": "https://github.com/stian-git/js-framework-ca",
-    "repositoryType": "GitHub",
-    "imageUrl": "./img/gamez-screenshot.jpg",
-    "imageThumbUrl": "./img/gamez-screenshot_thumb.jpg",
-    "highlights": ["React as Framework", "Bootstrap and Sass for styling", "User Authentication", "Game-Content retrieved from Rest-API", "Mark and save your favourites", "Contact Schema uses SmtpJS", "User and favourites stored in LocalStorage API"],
-    "description": [
-      "I used React to build this site and introduced the use of components like hooks, context, and states.",
-      "As backend I use a Wordpress-installation as user database, and the games data are fetched from Rawg.io.Localstorage is used to save logged in user, and game favourites.",
-      "The login do only provide access to an admin page, but there are no additional features implemented.Contactform uses a third party component from SmtpJS. Forms are built using React-hook-form, and Yup.",
-      "You can login using credentials: testuser/Password123!"
     ]
   },
 
