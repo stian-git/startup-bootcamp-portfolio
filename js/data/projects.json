@@ -1,132 +1,153 @@
 [
-    {
-        "id": 100,
-        "title": "GameZ",
-        "type": "Game Archive",
-        "url": "https://gorgeous-fenglisu-322c14.netlify.app/",
-        "keywords": ["React", "Rest-API", "Authentication", "Favourites", "Sass", "Bootstrap"],
-        "repositoryUrl": "https://github.com/stian-git/js-framework-ca",
-        "repositoryType": "GitHub",
-        "imageUrl": "./img/gamez-screenshot.jpg",
-        "imageThumbUrl": "./img/gamez-screenshot_thumb.jpg",
-        "highlights": ["React as Framework", "Bootstrap and Sass for styling", "User Authentication", "Game-Content retrieved from Rest-API", "Mark and save your favourites", "Contact Schema uses SmtpJS", "User and favourites stored in LocalStorage API"],
-        "description": [
-            "I used React to build this site and introduced the use of components like hooks, context, and states.",
-            "As backend I use a Wordpress-installation as user database, and the games data are fetched from Rawg.io.Localstorage is used to save logged in user, and game favourites.",
-            "The login do only provide access to an admin page, but there are no additional features implemented.Contactform uses a third party component from SmtpJS. Forms are built using React-hook-form, and Yup.",
-            "You can login using credentials: testuser/Password123!"
-        ]
-    },
+  {
+    "id": 95,
+    "title": "Comment-plugin for TNG",
+    "type": "Integration",
+    "url": "https://www.tekniskpotet.no/slekta/",
+    "keywords": ["JavaScript", "GraphComment", "Authentication", "Translation", "User Experience"],
+    "repositoryUrl": "https://github.com/stian-git/tng-mod-graphcomment",
+    "repositoryType": "GitHub",
+    "imageUrl": "./img/tng-comment-screenshot.jpg",
+    "imageThumbUrl": "./img/tng-comment-screenshot_thumb.jpg",
+    "highlights": ["Plugin for TNG", "Social Media Authentication", "Integrating services", "Improved user interaction"],
+    "description": [
+      "TNG is a powerful way to manage and display your family tree on your own website. (Quote: https://www.tngsitebuilding.com/) ",
+      "I wanted to use this TNG software for my own family tree, but I wanted more interaction with my visitors, so I decided to make my own integration.",
+      "I found a service (graphcomment.com) offering what I wanted for free, and decided to make a mod to achieve my goal. I even asked them if if I could translate the service to Norwegian, and they let me!",
+      "My plugin modifies the PHP in the backend and injects a Javascript-file that handles the comment-feature.",
+      "With this plugin visitors can use their existing FaceBook/Google/Twitter-account to comment on every people and/or media added to the TNG site, and they can interact with eachother.",
+      "Without this plugin visitors would have to register as a local TNG-user and write to the administrator only, which only the most interested people would concider to do"
+    ]
+  },
 
-    {
-        "id": 200,
-        "title": "Cabin Blog",
-        "type": "Blog",
-        "url": "https://zealous-panini-7beedb.netlify.app/projects/cabin-blog/",
-        "keywords": ["Blog", "Headless", "CMS", "Wordpress API"],
-        "repositoryUrl": "https://github.com/stian-git/portfolio1/tree/main/projects/cabin-blog",
-        "repositoryType": "GitHub",
-        "imageUrl": "./img/blog_desktop+mobile.jpg",
-        "imageThumbUrl": "./img/blog_desktop+mobile_thumb.jpg",
-        "highlights": ["Wordpress API-Integration", "Blog post Navigation", "Search and filter posts", "Modal to display enlarged media", "Repetitive components added though JS"],
-        "description": ["A blog front-end with content populated from a Wordpress site used as backend CMS. Users can send messages to the blogger which will be stored in Wordpress.", "Visitors can read and comment on blogposts live, and search and filter blogposts to find interesting posts."]
-    },
-    {
-        "id": 300,
-        "title": "Rainy Days",
-        "type": "Webshop",
-        "url": "https://zealous-panini-7beedb.netlify.app/projects/rainy-days/",
-        "keywords": ["Webshop", "Basket-handling", "Headless CMS", "Wordpress w/WooCommerce API as backend"],
-        "repositoryUrl": "https://github.com/stian-git/portfolio1/tree/main/projects/rainy-days",
-        "repositoryType": "GitHub",
-        "imageUrl": "./img/rainydays_desktop+mobile.jpg",
-        "imageThumbUrl": "./img/rainydays_desktop+mobile_thumb.jpg",
-        "highlights": ["Wordpress API-Integration", "WooCommerce API", "Place order in backend", "Search and filter Products", "Display multiple product photos from thumbs", "Basket stored in LocalStorage API", "Live Calculations"],
-        "description": [
-            "A webshop for jackets using a backend made of Wordpress with WooCommerce-integration. All product information are administrated in WooCommerce and retrieved through the REST-Api. The basket are stored in the LocalStorage API, and then sent and saved as an order in WooCommerce when the order has been placed.",
-            "The webshop even handles product variations (gender and sizes) for each product, and it also hides options that are not available for the individual products."
-        ]
-    },
-    {
-        "id": 400,
-        "title": "Science Museum",
-        "type": "Company Page",
-        "url": "https://zealous-panini-7beedb.netlify.app/projects/science-museum/",
-        "keywords": ["Standalone", "Google Map", "JS-Objects", "Timestamp", "Gamification", "QR-Code"],
-        "repositoryUrl": "https://github.com/stian-git/portfolio1/tree/main/projects/science-museum",
-        "repositoryType": "GitHub",
-        "imageUrl": "./img/sciencemuseum_desktop+mobile.jpg",
-        "imageThumbUrl": "./img/sciencemuseum_desktop+mobile_thumb.jpg",
-        "highlights": ["Sorting events", "Date/Time Handling", "Auto-hides past events", "Seat Reservation (no backend though)", "Content from JSON-file"],
-        "description": [
-            "An informational web page for a science museum. Built to inform potential visitors about the museum, it's exhibitions and special events. An attention grabber designed for kids (Find Eve), encourages the user to search through pages to find Eve. Main goal is to have the user browse more pages than planned.",
-            "Events are dynamicly displayed. Events older than a week will be hidden, and the rest will be displayed in future and recently past events. There is also a feature to Reserve Seat, which works as intended, but a backend is not implemented so it resets."
-        ]
-    },
-    {
-        "id": 500,
-        "title": "Sudoku Solver",
-        "type": "Hobby",
-        "url": "https://delicate-palmier-45a44c.netlify.app/",
-        "keywords": ["Hobby-project", "JS", "reusable components", "rule-building", "error-control", "start-over"],
-        "repositoryUrl": "https://github.com/stian-git/sudoku-solver",
-        "repositoryType": "GitHub",
-        "imageUrl": "./img/sudoku-screenshot.jpg",
-        "imageThumbUrl": "./img/sudoku-screenshot_thumb.jpg",
-        "highlights": ["Use your own game", "Play manually", "Let the game help you", "Error Indication", "Rotate the view"],
-        "description": [
-            "I started working on this Sudoku-solver during the spring 2022. I wanted to experience how I can translate the way I think while solving a Sudoku into code.",
-            "Solving a sudoku is done by using several different methods/rules. My solver got some of these rules implemented, but more rules need to be added to make it complete. The current version can solve most easy and medium leveled Sudokus.",
-            "My plan is also to implement a log showing the last steps, both manual and auto steps, and step back if needed."
-        ]
-    },
-    {
-        "id": 600,
-        "title": "Magic Card Trick",
-        "type": "Hobby",
-        "url": "https://infallible-newton-fee18b.netlify.app/",
-        "keywords": ["Hobby-project", "JavaScript", "DeckofCards API", "Async functions"],
-        "repositoryUrl": "https://github.com/stian-git/cardtrick",
-        "repositoryType": "GitHub",
-        "imageUrl": "./img/cardtrick-screenshots.jpg",
-        "imageThumbUrl": "./img/cardtrick-screenshots-thumb.jpg",
-        "highlights": ["Magically Reveals your card", "Cards Retrived through API", "Swap cards is possible", "Restart feature available"],
-        "description": ["My first ever JavaScript project, built before I had any Javascript classes.", "This is a classic card trick where you need to remember a card and the game will magically identify it.", "I got inspired to make this by watching a video of someone who demonstrated the use of the DeckofCards API to build a Blackjack-game."]
-    },
-    {
-        "id": 700,
-        "title": "Portfolio (this site)",
-        "type": "Portfolio",
-        "url": "https://tekniskpotet.no",
-        "keywords": ["CV", "Sass", "Bootstrap", "SmtpJS", "Scroll-Spy", "Single paged", "Form Validation"],
-        "repositoryUrl": "https://github.com/stian-git/startup-bootcamp-portfolio",
-        "repositoryType": "GitHub",
-        "imageUrl": "./img/portfolio-screenshot.jpg",
-        "imageThumbUrl": "./img/portfolio-screenshot_thumb.jpg",
-        "highlights": ["Vanilla JS, BootStrap and Sass w/BEM", "Scroll-Spy controls the Navbar", "Easy content-updated through JSON-file", "Single Page Design", "Contact Form sends Email w/SmtpJS"],
-        "description": [
-            "This is the Portfolio-page you are reading right now.",
-            "It`s quite simply built using Vanilla JS and styled using Bootstrap and Sass w/BEM-methodology.",
-            "My main focus was to make it easy to update the page without the need for additional design conciderations, so most of the content is updated through a JSON-file. I also wanted to make the impression that I`m more of a code-focused developer, than Design-focused.",
-            "This project was the first single-paged project I made using Scroll-Spy. Scroll-Spy makes the Navbar stick to the top when you have scrolled passed the intro, and it also controls which menu item is the active one."
-        ]
-    },
-    {
-        "id": 800,
-        "title": "Søndre Land Ski (Design only!)",
-        "type": "Sports Club",
-        "url": "https://loquacious-eclair-317b73.netlify.app/",
-        "keywords": ["Design", "Sports club", "Brand", "Style Guide"],
-        "repositoryUrl": "https://github.com/stian-git/design-2-ca",
-        "repositoryType": "GitHub",
-        "imageUrl": "./img/slil-ski-screenshot.jpg",
-        "imageThumbUrl": "./img/slil-ski-screenshot_thumb.jpg",
-        "highlights": ["Brand-continuity", "Redesign", "Typography", "Styling of components", "Color Selections", "Layout Design"],
-        "description": [
-            "This is not an actual site, but an example of a Style Guide I often start my projects with.I usually use Adobe XD for the design and sketches, but getting a decent layout like this with HTML and CSS gives me the visual confirmation of my project before I start developing.",
-            "In this project the task was to build a new design for an existing site. I selected the existing homepage https://ski.slil.no/ for this project.",
-            "The colors found in the logo is an important part of the clubs identity, so I wanted to reuse those as an important part of the style.",
-            "The content of this single page shows the relations of typography, navigation, footer and how different components can be visualised (images, results, buttons, forms, etc)"
-        ]
-    }
+  {
+    "id": 100,
+    "title": "GameZ",
+    "type": "Game Archive",
+    "url": "https://gorgeous-fenglisu-322c14.netlify.app/",
+    "keywords": ["React", "Rest-API", "Authentication", "Favourites", "Sass", "Bootstrap"],
+    "repositoryUrl": "https://github.com/stian-git/js-framework-ca",
+    "repositoryType": "GitHub",
+    "imageUrl": "./img/gamez-screenshot.jpg",
+    "imageThumbUrl": "./img/gamez-screenshot_thumb.jpg",
+    "highlights": ["React as Framework", "Bootstrap and Sass for styling", "User Authentication", "Game-Content retrieved from Rest-API", "Mark and save your favourites", "Contact Schema uses SmtpJS", "User and favourites stored in LocalStorage API"],
+    "description": [
+      "I used React to build this site and introduced the use of components like hooks, context, and states.",
+      "As backend I use a Wordpress-installation as user database, and the games data are fetched from Rawg.io.Localstorage is used to save logged in user, and game favourites.",
+      "The login do only provide access to an admin page, but there are no additional features implemented.Contactform uses a third party component from SmtpJS. Forms are built using React-hook-form, and Yup.",
+      "You can login using credentials: testuser/Password123!"
+    ]
+  },
+
+  {
+    "id": 200,
+    "title": "Cabin Blog",
+    "type": "Blog",
+    "url": "https://zealous-panini-7beedb.netlify.app/projects/cabin-blog/",
+    "keywords": ["Blog", "Headless", "CMS", "Wordpress API"],
+    "repositoryUrl": "https://github.com/stian-git/portfolio1/tree/main/projects/cabin-blog",
+    "repositoryType": "GitHub",
+    "imageUrl": "./img/blog_desktop+mobile.jpg",
+    "imageThumbUrl": "./img/blog_desktop+mobile_thumb.jpg",
+    "highlights": ["Wordpress API-Integration", "Blog post Navigation", "Search and filter posts", "Modal to display enlarged media", "Repetitive components added though JS"],
+    "description": ["A blog front-end with content populated from a Wordpress site used as backend CMS. Users can send messages to the blogger which will be stored in Wordpress.", "Visitors can read and comment on blogposts live, and search and filter blogposts to find interesting posts."]
+  },
+  {
+    "id": 300,
+    "title": "Rainy Days",
+    "type": "Webshop",
+    "url": "https://zealous-panini-7beedb.netlify.app/projects/rainy-days/",
+    "keywords": ["Webshop", "Basket-handling", "Headless CMS", "Wordpress w/WooCommerce API as backend"],
+    "repositoryUrl": "https://github.com/stian-git/portfolio1/tree/main/projects/rainy-days",
+    "repositoryType": "GitHub",
+    "imageUrl": "./img/rainydays_desktop+mobile.jpg",
+    "imageThumbUrl": "./img/rainydays_desktop+mobile_thumb.jpg",
+    "highlights": ["Wordpress API-Integration", "WooCommerce API", "Place order in backend", "Search and filter Products", "Display multiple product photos from thumbs", "Basket stored in LocalStorage API", "Live Calculations"],
+    "description": [
+      "A webshop for jackets using a backend made of Wordpress with WooCommerce-integration. All product information are administrated in WooCommerce and retrieved through the REST-Api. The basket are stored in the LocalStorage API, and then sent and saved as an order in WooCommerce when the order has been placed.",
+      "The webshop even handles product variations (gender and sizes) for each product, and it also hides options that are not available for the individual products."
+    ]
+  },
+  {
+    "id": 400,
+    "title": "Science Museum",
+    "type": "Company Page",
+    "url": "https://zealous-panini-7beedb.netlify.app/projects/science-museum/",
+    "keywords": ["Standalone", "Google Map", "JS-Objects", "Timestamp", "Gamification", "QR-Code"],
+    "repositoryUrl": "https://github.com/stian-git/portfolio1/tree/main/projects/science-museum",
+    "repositoryType": "GitHub",
+    "imageUrl": "./img/sciencemuseum_desktop+mobile.jpg",
+    "imageThumbUrl": "./img/sciencemuseum_desktop+mobile_thumb.jpg",
+    "highlights": ["Sorting events", "Date/Time Handling", "Auto-hides past events", "Seat Reservation (no backend though)", "Content from JSON-file"],
+    "description": [
+      "An informational web page for a science museum. Built to inform potential visitors about the museum, it's exhibitions and special events. An attention grabber designed for kids (Find Eve), encourages the user to search through pages to find Eve. Main goal is to have the user browse more pages than planned.",
+      "Events are dynamicly displayed. Events older than a week will be hidden, and the rest will be displayed in future and recently past events. There is also a feature to Reserve Seat, which works as intended, but a backend is not implemented so it resets."
+    ]
+  },
+  {
+    "id": 500,
+    "title": "Sudoku Solver",
+    "type": "Hobby",
+    "url": "https://delicate-palmier-45a44c.netlify.app/",
+    "keywords": ["Hobby-project", "JS", "reusable components", "rule-building", "error-control", "start-over"],
+    "repositoryUrl": "https://github.com/stian-git/sudoku-solver",
+    "repositoryType": "GitHub",
+    "imageUrl": "./img/sudoku-screenshot.jpg",
+    "imageThumbUrl": "./img/sudoku-screenshot_thumb.jpg",
+    "highlights": ["Use your own game", "Play manually", "Let the game help you", "Error Indication", "Rotate the view"],
+    "description": [
+      "I started working on this Sudoku-solver during the spring 2022. I wanted to experience how I can translate the way I think while solving a Sudoku into code.",
+      "Solving a sudoku is done by using several different methods/rules. My solver got some of these rules implemented, but more rules need to be added to make it complete. The current version can solve most easy and medium leveled Sudokus.",
+      "My plan is also to implement a log showing the last steps, both manual and auto steps, and step back if needed."
+    ]
+  },
+  {
+    "id": 600,
+    "title": "Magic Card Trick",
+    "type": "Hobby",
+    "url": "https://infallible-newton-fee18b.netlify.app/",
+    "keywords": ["Hobby-project", "JavaScript", "DeckofCards API", "Async functions"],
+    "repositoryUrl": "https://github.com/stian-git/cardtrick",
+    "repositoryType": "GitHub",
+    "imageUrl": "./img/cardtrick-screenshots.jpg",
+    "imageThumbUrl": "./img/cardtrick-screenshots-thumb.jpg",
+    "highlights": ["Magically Reveals your card", "Cards Retrived through API", "Swap cards is possible", "Restart feature available"],
+    "description": ["My first ever JavaScript project, built before I had any Javascript classes.", "This is a classic card trick where you need to remember a card and the game will magically identify it.", "I got inspired to make this by watching a video of someone who demonstrated the use of the DeckofCards API to build a Blackjack-game."]
+  },
+  {
+    "id": 700,
+    "title": "Portfolio (this site)",
+    "type": "Portfolio",
+    "url": "https://tekniskpotet.no",
+    "keywords": ["CV", "Sass", "Bootstrap", "SmtpJS", "Scroll-Spy", "Single paged", "Form Validation"],
+    "repositoryUrl": "https://github.com/stian-git/startup-bootcamp-portfolio",
+    "repositoryType": "GitHub",
+    "imageUrl": "./img/portfolio-screenshot.jpg",
+    "imageThumbUrl": "./img/portfolio-screenshot_thumb.jpg",
+    "highlights": ["Vanilla JS, BootStrap and Sass w/BEM", "Scroll-Spy controls the Navbar", "Easy content-updated through JSON-file", "Single Page Design", "Contact Form sends Email w/SmtpJS"],
+    "description": [
+      "This is the Portfolio-page you are reading right now.",
+      "It`s quite simply built using Vanilla JS and styled using Bootstrap and Sass w/BEM-methodology.",
+      "My main focus was to make it easy to update the page without the need for additional design conciderations, so most of the content is updated through a JSON-file. I also wanted to make the impression that I`m more of a code-focused developer, than Design-focused.",
+      "This project was the first single-paged project I made using Scroll-Spy. Scroll-Spy makes the Navbar stick to the top when you have scrolled passed the intro, and it also controls which menu item is the active one."
+    ]
+  },
+  {
+    "id": 800,
+    "title": "Søndre Land Ski (Design only!)",
+    "type": "Sports Club",
+    "url": "https://loquacious-eclair-317b73.netlify.app/",
+    "keywords": ["Design", "Sports club", "Brand", "Style Guide"],
+    "repositoryUrl": "https://github.com/stian-git/design-2-ca",
+    "repositoryType": "GitHub",
+    "imageUrl": "./img/slil-ski-screenshot.jpg",
+    "imageThumbUrl": "./img/slil-ski-screenshot_thumb.jpg",
+    "highlights": ["Brand-continuity", "Redesign", "Typography", "Styling of components", "Color Selections", "Layout Design"],
+    "description": [
+      "This is not an actual site, but an example of a Style Guide I often start my projects with.I usually use Adobe XD for the design and sketches, but getting a decent layout like this with HTML and CSS gives me the visual confirmation of my project before I start developing.",
+      "In this project the task was to build a new design for an existing site. I selected the existing homepage https://ski.slil.no/ for this project.",
+      "The colors found in the logo is an important part of the clubs identity, so I wanted to reuse those as an important part of the style.",
+      "The content of this single page shows the relations of typography, navigation, footer and how different components can be visualised (images, results, buttons, forms, etc)"
+    ]
+  }
 ]
