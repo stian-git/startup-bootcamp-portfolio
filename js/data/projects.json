@@ -157,7 +157,7 @@
     "title": "Portfolio (this site)",
     "type": "Portfolio",
     "url": "https://tekniskpotet.no",
-    "keywords": ["CV", "Sass", "Bootstrap", "SmtpJS", "Scroll-Spy", "Single paged", "Form Validation"],
+    "keywords": ["CV", "Sass", "Bootstrap", "SmtpJS", "Scroll-Spy", "Single paged", "Form Validation", "Country Flags API"],
     "repositoryUrl": "https://github.com/stian-git/startup-bootcamp-portfolio",
     "repositoryType": "GitHub",
     "imageUrl": "./img/portfolio-screenshot.jpg",
