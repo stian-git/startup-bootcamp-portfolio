@@ -1,5 +1,25 @@
 [
   {
+    "id": 99,
+    "title": "MyFriends",
+    "type": "Social Media",
+    "url": "https://quiet-pavlova-2a196b.netlify.app/",
+    "keywords": ["React", "Rest-API", "Authentication", "Interaction", "Sass", "Bootstrap"],
+    "repositoryUrl": "https://github.com/Noroff-FEU-Assignments/project-exam-2-stian-git",
+    "repositoryType": "GitHub",
+    "imageUrl": "./img/myfriends-screenshot.jpg",
+    "imageThumbUrl": "./img/myfriends-screenshot_thumb.jpg",
+    "highlights": ["Publish posts", "Write comments", "React with emojis", "Follow users", "User Authentication", "Search and filter posts and users", "Edit userprofile"],
+    "description": [
+      "My school offers a backend that stores posts, users and comments.",
+      "I used React to build this responsive social media that offers key features like writing posts, comments, reacting, etc. ",
+      "I was also able to add a feature that shows if someone has replied to a previous comment.",
+      "Users may search for posts or filter them using tags or show posts only from followed users.",
+      "You may also view all activity from a single user.",
+      "All students use the same backend with different front-ends, so the content changes like a live environment."
+    ]
+  },
+  {
     "id": 100,
     "title": "GameZ",
     "type": "Game Archive",
@@ -17,6 +37,25 @@
       "You can login using credentials: testuser/Password123!"
     ]
   },
+  {
+    "id": 103,
+    "title": "Brickastle",
+    "type": "Webshop",
+    "url": "",
+    "keywords": ["BootStrap", "Strapi", "Heroku", "Sass", "Product Search", "Fontawesome", "Combining APIs"],
+    "repositoryUrl": "https://github.com/stian-git/stian-martinsen-stormyr-semester-project-2",
+    "repositoryType": "GitHub",
+    "imageUrl": "./img/brickastle-screenshot.jpg",
+    "imageThumbUrl": "./img/brickastle-screenshot_thumb.jpg",
+    "highlights": ["Own backend using Strapi", "Admin interface for product admin", "Third party API retrieves minifigures for each set", "Cart functionality", "Dynamic links to external content when available"],
+    "description": [
+      "Brickastle is a webshop specialized for Lego castles and offers both new and vintage models.",
+      "It was originally built with Strapi as backend, but the database was removed when Heroku discontinued the free tier in December 2022. So the live site is currently unavailable.",
+      "Administrators can login to the website to add, edit or delete products available.",
+      "User is able to search for products on all pages, and on the products page the search field is replaced with a product filter."
+    ]
+  },
+
   {
     "id": 105,
     "title": "Comment-plugin for TNG",
