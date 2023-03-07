@@ -50,7 +50,7 @@
     "highlights": ["Own backend using Strapi", "Admin interface for product admin", "Third party API retrieves minifigures for each set", "Cart functionality", "Dynamic links to external content when available"],
     "description": [
       "Brickastle is a webshop specialized for Lego castles and offers both new and vintage models.",
-      "It was originally built with Strapi as backend, but the database was removed when Heroku discontinued the free tier in December 2022. So the live site is currently unavailable.",
+      "I built my own Strapi as backend with a PostgreSQL and have deployed it through Railway. (Backend repo: https://github.com/stian-git/lego-strapi)",
       "Administrators can login to the website to add, edit or delete products available.",
       "User is able to search for products on all pages, and on the products page the search field is replaced with a product filter."
     ]
